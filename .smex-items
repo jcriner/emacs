@@ -1,0 +1,37 @@
+
+;; ----- smex-history -----
+(
+ clipboard-yank
+ comment-region
+ refill-mode
+ fill-region
+ tuareg-mode
+ package-install
+ eshell
+)
+
+;; ----- smex-data -----
+(
+ (flyspell-mode . 1)
+ (run-scheme . 10)
+ (eshell . 5)
+ (comment-region . 3)
+ (scheme-mode . 2)
+ (scheme-send-region . 2)
+ (scheme-send-last-sexp . 2)
+ (indent-sexp . 1)
+ (make-directory . 2)
+ (indent-region . 1)
+ (run-ruby . 3)
+ (ruby-send-region . 1)
+ (japanese-zenkaku-region . 1)
+ (load-theme . 4)
+ (package-install . 2)
+ (eval-region . 4)
+ (ghc-core-mode . 1)
+ (haskell-mode . 1)
+ (tuareg-mode . 1)
+ (fill-region . 1)
+ (refill-mode . 2)
+ (clipboard-yank . 3)
+)

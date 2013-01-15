@@ -1,0 +1,125 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/jacob/projects/haskell/" . "learn-you-a-haskell/")
+ ("/home/jacob/projects/classes-archive/Spring2012/430/projects/compiler/" . "public_tests/")
+ ("/home/jacob/projects/classes-archive/Spring2012/430/" . "projects/")
+ ("/home/jacob/Desktop/Resume Material/" . "epic-material/")
+ ("/home/jacob/projects/classes-archive/Spring2012/430/projects/" . "compiler/")
+ ("/home/jacob/projects/classes-archive/Spring2012/" . "430/")
+ ("/home/jacob/projects/classes-archive/" . "Spring2012/")
+ ("/home/" . "jacob/")
+ ("/" . "home/")
+ ("/home/jacob/projects/" . "haskell/")
+ ("/home/jacob/.emacs.d/elpa/auto-complete-1.4/" . "dict/")
+ ("/home/jacob/.emacs.d/elpa/" . "starter-kit-2.0.3/")
+ ("/home/jacob/.emacs.d/" . "elpa/")
+ ("/home/jacob/Desktop/arcode/" . "inky-mobile-backbone/")
+ ("/home/jacob/Desktop/" . "Resume Material/")
+ ("/home/jacob/" . "projects/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jacob/projects/haskell/learn-you-a-haskell/"
+ "/home/jacob/.emacs.d/"
+ "/home/jacob/"
+ "/home/jacob/projects/forth-interpreter/"
+ "/home/jacob/projects/pro-bash-prog/"
+ "/home/jacob/Desktop/"
+ "/etc/cron.daily/"
+ "/home/jacob/projects/haskell/"
+ "/home/jacob/projects/classes-archive/Spring2012/430/projects/compiler/"
+ "/home/jacob/projects/classes-archive/Spring2012/430/projects/compiler/public_tests/"
+ "/home/jacob/Desktop/Resume Material/epic-material/"
+ "/home/jacob/projects/"
+ "/home/jacob/Desktop/Resume Material/"
+ "/home/jacob/projects/phys-engine/"
+ "/home/jacob/.emacs.d/elpa/auto-complete-1.4/dict/"
+ "/home/jacob/.emacs.d/.git/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "learnyou_9-.hs"
+ "init.el"
+ "stupid.lisp"
+ "forth.py"
+ "hello"
+ "lies.py"
+ "ceasar.py"
+ "ceasar.hs"
+ "popularity-contest"
+ "example.hs"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jacob/" (20655 38310) ".goutputstream-2HDSFW" "workspace/" ".gstreamer-0.10/" ".goutputstream-PB8DHW" ".swt/" ".goutputstream-XXOGJW" ".goutputstream-8J1JLW" ".pki/" ".goutputstream-MBU6LW" ".emacs.d/" ".pulse/" ".goutputstream-BY6QJW" ".goutputstream-TL6YKW" ".goutputstream-YNLCLW" ".npm/" "projects/" ".goutputstream-1BVYGW" ".goutputstream-RFA3NW" ".mozilla/" ".goutputstream-EMNTFW" ".dmrc" ".goutputstream-6J67JW" "Pictures/" ".goutputstream-9XMKMW" ".goutputstream-28W0JW" ".goutputstream-0XE3GW" ".goutputstream-T5YXLW" ".goutputstream-RWYRJW" ".goutputstream-TS8THW" ".Skype/" ".goutputstream-UDAPIW" ".ghc/" ".goutputstream-QOHLJW" ".gnome2_private/" ".goutputstream-Z2AYKW" ".goutputstream-OPPWJW" "Documents/" ".compiz-1/" ".goutputstream-1RUINW" ".dbus/" ".goutputstream-FSE1MW" ".adobe/" ".goutputstream-Q1BLNW" ".goutputstream-U4NXFW" ".mission-control/" ".shotwell/" ".ICEauthority" ".goutputstream-GMKEHW" ".goutputstream-VKMNLW" ".speech-dispatcher/" ".goutputstream-N6R2FW" ".goutputstream-C5TAIW" "Downloads/" ".gvfs/" ".bashrc" "Firefox_wallpaper.png" "Music/" ".goutputstream-C65XFW" ".Braid/" ".thumbnails/" ".goutputstream-JQRQKW" ".goutputstream-S4VBJW" ".Xauthority" ".goutputstream-Z1SYEW" ".macromedia/" ".config/" ".goutputstream-OZUIJW" ".lesshst" ".gksu.lock" ".local/" "Public/" ".goutputstream-5RTFLW" ".goutputstream-WZ14MW" ".goutputstream-C2MALW" ".ido.last~" ".goutputstream-08C0NW" ".gitconfig" ".goutputstream-TWJWNW" ".goutputstream-T75CMW" ".goutputstream-CPAVFW" ".goutputstream-CX2NHW" ".goutputstream-ORXCNW" ".goutputstream-I3V8EW" ".viminfo" ".goutputstream-MWWWNW" ".goutputstream-QS15IW" ".xsession-errors.old" ".gtk-bookmarks" ".gem/" ".bash_history" ".goutputstream-6BASNW" ".goutputstream-AKWMNW" "Templates/" ".goutputstream-JRN2HW" ".goutputstream-IZ93KW" ".goutputstream-24E6HW" ".goutputstream-C6Y4KW" ".goutputstream-KLA5MW" ".goutputstream-IR5XLW" ".goutputstream-1JFIIW" ".goutputstream-BOVDIW" ".goutputstream-H2F2EW" ".goutputstream-BBMFHW" ".recentf" ".goutputstream-QG89KW" ".cache/" ".goutputstream-V37DGW" ".goutputstream-EGAMIW" ".ido.last" ".eclipse/" ".thunderbird/" ".pulse-cookie" ".gconf/" ".goutputstream-D4KTMW" ".goutputstream-ZQZSNW" ".goutputstream-D6O3MW" ".gnome/" ".goutputstream-1F8PHW" ".goutputstream-4A7WNW" ".profile" "Desktop/" "Videos/" ".ecryptfs/" "Mail/" ".ssh/" ".Private/" ".bash_logout" ".fontconfig/" "examples.desktop" ".goutputstream-VIM1KW" "mit-scheme-9.1.1/" ".goutputstream-F37HMW" ".goutputstream-YQTEJW" ".goutputstream-0Z58KW" ".goutputstream-H89AKW" ".goutputstream-L4S4NW" ".goutputstream-87ABGW" ".goutputstream-YXHZIW" ".goutputstream-ADH1MW" ".goutputstream-B4J0FW" ".goutputstream-K4CZMW" ".goutputstream-LMJ1HW" ".xsession-errors" ".goutputstream-560IFW" ".goutputstream-CECNMW" ".goutputstream-2HUWHW" ".goutputstream-O8ZKFW" ".gnome2/" ".goutputstream-30PLGW" ".goutputstream-5RKKMW" ".goutputstream-8NE0FW" "../" "./")
+
+ ("/home/jacob/projects/haskell/learn-you-a-haskell/" (20620 44192) "./" "learnyou_9-.hs" "example.hs" "learnyou_1-8.hs" "../")
+
+ ("/home/jacob/projects/" (20654 65142) "haskell/" "pro-bash-prog/" "little-schemer.scm" "./" "forth-interpreter/" "#example.scm#" "classes-archive/" "sicp/" "examples.pl" "seasoned-schemer.scm" "reasoned-schemer.scm" "games/" "scheme-os/" "cli_notes.txt" "phys-engine/" "../")
+
+ ("/home/jacob/.emacs.d/" (20655 1320 55936 305000) "eshell/" ".smex-items" "session.10edf58a75fdb5c0e4134291460717043600000017610042" "./" "places" "abbrev_defs" "backups/" "elpa/" "auto-save-list/" "init.el" "url/" "../" "init.el~")
+
+ ("/home/jacob/projects/pro-bash-prog/" (20643 24800 272411 142000) "./" "hello" "README" "../")
+
+ ("/home/jacob/Desktop/" (20620 35145 377887 3000) "put-on-docs.txt" ".emacs.d/" "Resume Material/" "Wisconsin 2012 Photos/" "emacs-wrangling.txt" "./" "rails-rtc.txt~" "prog-books/" "js.txt~" "Games/" "put-on-docs.txt~" "cli_notes.txt~" "desktop.html~" "future-class.txt" "../" "olden desktoppe/")
+
+ ("/home/jacob/.emacs.d/elpa/starter-kit-2.0.3/" (20490 64947 400247 737000) "starter-kit-defuns.elc" "starter-kit-defuns.el" "starter-kit.el" "starter-kit-pkg.el" "./" "starter-kit-autoloads.el~" "starter-kit.elc" "starter-kit-pkg.elc" "starter-kit-misc.elc" "starter-kit-autoloads.el" "starter-kit-misc.el" "../")
+
+ ("/home/jacob/.emacs.d/elpa/" (20612 43195 577816 402000) "paredit-22/" "caml-3.12.0.1/" "haskell-mode-2.8.0/" "./" "find-file-in-project-3.2/" "inf-ruby-2.2.3/" "idle-highlight-mode-1.1.2/" "starter-kit-js-2.0.1/" "magit-1.1.1/" "smex-1.1.2/" "tuareg-2.0.5/" "starter-kit-2.0.3/" "ido-ubiquitous-1.0/" "starter-kit-ruby-2.0.3/" "archives/" "../")
+
+ ("/etc/cron.daily/" (20618 44515 777702 317000) "logrotate" "apache2" "apt" "dpkg" "apport" "mlocate" "standard" "./" ".placeholder" "man-db" "popularity-contest" "update-notifier-common" "bsdmainutils" "google-chrome" "passwd" "0anacron" "../")
+
+ ("/home/jacob/projects/haskell/" (20620 42979 634116 918000) "./" "learn-you-a-haskell/" "../")
+
+ ("/home/jacob/projects/classes-archive/Spring2012/430/projects/compiler/" (20613 42417 626938 633000) "assembler.ml~" "parser.cmi" "rubec.cmo" "p4.pdf" "rubec.ml" "._bcdi/" "parser.cmo" "stdlib.lua" "disassembler.ml" "parser.mly" "Makefile" "test.ru~" "rubec.ml~" "concat.lua" "OCamlMakefile" "examples.ml" "ast.mli~" "assembler.cmo" "sizes.c" "invoketest.ru~" "._assembler.mli" "._p4.pdf" "lexer.mll" "disassembler.mli" "concat.lua~" "disassembler.cmi" "rubec" "lexer.cmo" "math.ru~" "assembler.cmi" "lexer.ml" "build.sh" "doc/" "stringformat.lua" "assembler.ml" "tests/" "._assembler.ml" "luac.out" "stdlib.lua~" "dfa" "public_tests/" "._d/" "ast.cmi" "obj.ru~" "test.ru" "examples.ml~" "rubec.out" "build.sh~" "sizes.o" "parser.mli" "ast.mli" "intstring.ru~" "._sizes.c" "lexer.cmi" "parser.ml" "assembler.mli" "rubec.cmi" "objectequal.ru~" "disassembler.cmo" "../" "./")
+
+ ("/home/jacob/projects/classes-archive/Spring2012/430/projects/compiler/public_tests/" (20390 43206 0 0) "#iftest5.ru#" "local.ru" "print.ru" "iftest5.ru~" "class1.ru" "arith3.ru" "iftest2.ru" "./" "arith5.ru" "arith2.ru" "iftest1.ru" "iftest4.ru~" "iftest4.ru" "string2.ru" "class3.ru" "iftest3.ru" "invoke.ru" "field1.ru" "string1.ru" "iftest5.ru" "class2.ru" "arith1.ru" "field2.ru" "arith4.ru" "README" "seq1.ru" "field3.ru" "../")
+
+ ("/home/jacob/Desktop/Resume Material/epic-material/" (20612 30887 807516 506000) "./" "criner-unofficial-transcript.doc" "project-presentation" "project-presentation~" "references.doc" ".~lock.application.doc#" "application.doc" "README~" "README" "../")
+
+ ("/home/jacob/Desktop/Resume Material/" (20611 12062 948283 73000) "criner-resume.doc" "./" "epic-material/" "resume.tex" "criner-unofficial-transcript.doc" "res2.tex" "criner-resume.pdf" "../" "resume.txt")
+
+ ("/home/jacob/projects/classes-archive/Spring2012/430/projects/" (20384 8748 0 0) "type-check/" "./" "dataflow/" "compiler/" "unit-calc/" "../")
+
+ ("/home/jacob/projects/classes-archive/Spring2012/430/" (20394 47658 0 0) "projects/" "h1-jcriner.txt" "./" "h1-jcriner.txt~" "ocamlyacc-tutorial.pdf" "notes.txt" "notes.txt~" "#test.mly#" "ocamllex-tutorial.pdf" "../")
+
+ ("/home/jacob/projects/classes-archive/Spring2012/" (20588 35829 413814 688000) "./" "engl398R/" "README~" "421/" "430/" "../")
+
+ ("/home/jacob/projects/classes-archive/" (20588 35829 413814 688000) "./" "Fall2011/" "Spring2012/" "README" "../")
+
+ ("/home/jacob/projects/sicp/" (20468 44812 836341 665000) "./" "ch1.scm" "../")
+
+ ("/home/jacob/projects/phys-engine/" (20569 12028 461846 319000) "main.rb" "./" "engine.rb" ".git/" "blue_ball.bmp" "../")
+
+ ("/home/" (20426 55733 348679 324000) "./" ".ecryptfs/" "jacob/" "../")
+
+ ("/home/jacob/projects/games/" (20512 22677 865123 946000) "spongebob.bmp" "pikachu.png" "./" "rubygame.rb" "spongebob.jpg" "rubygame.rb~" "../")
+
+ ("/home/jacob/.emacs.d/elpa/auto-complete-1.4/dict/" (20490 54707 471170 756000) "python-mode" "css-mode" "#test.scm#" "./" "lua-mode" "clojurescript-mode" "sh-mode" "ts-mode" "ruby-mode" "c++-mode" "tcl-mode" "javascript-mode" "php-mode" "clojure-mode" "c-mode" "java-mode" "erlang-mode" "coq-mode" "ada-mode" "caml-mode" "tuareg-mode" "../" "scheme-mode")
+
+ ("/home/jacob/.emacs.d/auto-complete-1.3.1/" (20490 12643 831888 722000) "auto-complete.elc" "COPYING.FDL.txt" "Makefile" "README.txt" "auto-complete-config.elc" "./" "dict/" "doc/" "auto-complete-config.el" "TODO.txt" "popup.el" "fuzzy.elc" "auto-complete.el" "popup.elc" "COPYING.GPLv3.txt" "etc/" "fuzzy.el" "../")
+
+ ("/usr/share/emacs/24.1.50/etc/" (20490 14348 973380 352000) "MACHINES" "DOC-24.1.50.2" "SERVICE" "condom.1" "ps-prin0.ps" "e/" "GNU" "NEWS.21" "NEWS.23" "TERMS" "themes/" "ERC-NEWS" "schema/" "NEWS.18" "sex.6" "emacs.desktop" "PROBLEMS" "gnus/" "spook.lines" "MAILINGLISTS" "gnus-tut.txt" "forms/" "ORDERS" "DISTRIB" "NEWS.20" "compilation.txt" "GNUS-NEWS" "refcards/" "publicsuffix.txt" "copying.paper" "NEWS.19" "ETAGS.EBNF" "CONTRIBUTE" "NXML-NEWS" "AUTHORS" "emacs-buffer.gdb" "WHY-FREE" "MH-E-NEWS" "NEWS.1-17" "DOC-24.1.50.1" "celibacy.1" "README" "CENSORSHIP" "HELLO" "DEVEL.HUMOR" "srecode/" "ps-prin1.ps" "COOKIES" "JOKES" "ETAGS.README" "images/" "NEWS.22" "echo.msg" "grep.txt" "DEBUG" "future-bug" "FTP" "TODO" "ORG-NEWS" "NEXTSTEP" "yow.lines" "MOTIVATION" "enriched.doc" "org/" "ses-example.ses" "INTERVIEW" "THE-GNU-PROJECT" "emacs.xpm" "nxml/" "MORE.STUFF" "LINUX-GNU" "emacs.icon" "NEWS" "rgb.txt" "edt-user.el" "charsets/" "tutorials/" "../" "./")
+
+ ("/home/jacob/.emacs.d/elpa/popup-0.5/" (20490 50040 624029 123000) "./" "popup-pkg.elc" "popup-pkg.el" "popup-autoloads.el~" "popup-autoloads.el" "popup.el" "popup.elc" "../")
+
+ ("/home/jacob/.emacs.d/elpa/auto-complete-1.4/" (20490 50044 992050 739000) "auto-complete.elc" "COPYING.FDL" "Makefile" "README.md" "auto-complete-autoloads.el" "auto-complete-config.elc" "./" "TODO.md" "dict/" "doc/" "COPYING.GPLv3" "auto-complete-config.el" "auto-complete-pkg.elc" "auto-complete-autoloads.el~" "auto-complete.el" "auto-complete-pkg.el" "../")
+
+ ("/home/jacob/.emacs.d/.git/" (20490 11509 622264 482000) "COMMIT_EDITMSG" "description" "config" "./" "HEAD" "branches/" "objects/" "hooks/" "logs/" "info/" "index" "refs/" "../")
+
+ ("/home/jacob/.emacs.d/auto-save-list/" (20490 10481 397165 816000) "./" ".saves-4998-ganymede~" ".saves-6647-ganymede~" "../")
+
+ ("/home/jacob/.emacs.d/.git/branches/" (20483 36332 32638 535000) "./" "../")
+
+ ("/home/jacob/Desktop/arcode/inky-mobile-backbone/" (20489 32939 95475 747000) "mail/" "less/" "README.md" "./" "templates/" "font/" "css/" "img/" "js/" ".git/" "index.html" "../" ".gitignore")
+
+ ("/home/jacob/Desktop/arcode/" (20488 18873 14976 242000) "./" "inky-mobile-backbone/" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
