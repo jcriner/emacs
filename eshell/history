@@ -81,3 +81,6 @@ mv little-schemer.scm seasoned-schemer.scm scheme/
 ls
 cd scheme/
 ls
+cd elpa/expand-region-0.8.0/
+ls
+exit
