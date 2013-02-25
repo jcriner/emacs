@@ -1,0 +1,10 @@
+
+# Package directories and such.
+auto-save-list/
+backups/
+elpa/
+eshell/
+url/
+
+# Ignore all Emacs backup files.
+*~
