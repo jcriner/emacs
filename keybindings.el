@@ -17,6 +17,12 @@
 
 ;;;---------------------------------------------------
 
+
+;; Auto-indent on RET globally by default. (Maybe sane-defaults.el
+;; should have this)
+(global-set-key (kbd "RET") 'reindent-then-newline-and-indent)
+
+;; Expansion binding
 (global-set-key (kbd "C-.") 'dabbrev-expand) ; will make hippie, later
 
 ;; Smart M-x

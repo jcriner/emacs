@@ -25,11 +25,16 @@
 ;; Show keystrokes in progress
 (setq echo-keystrokes 0.1)
 
+;; TODO: Need to understand what this does better.
 ;; Move files to trash when deleting
-(setq delete-by-moving-to-trash t)
+;(setq delete-by-moving-to-trash t)
 
-;; Real emacs knights don't use shift to mark things
+;; Don't need to use shift to mark things.
+;; This frees up S-<arrow keys>, etc, as well.
 (setq shift-select-mode nil)
+
+;; next-line now creates newlines at the bottom of a buffer.
+(setq next-line-add-newlines t)
 
 ;; Transparently open compressed files
 (auto-compression-mode t)
@@ -83,7 +88,7 @@
 (global-subword-mode 1)
 
 ;; Set to 't' to stop from breaking lines.
-(setq-default truncate-lines nil)
+(setq-default truncate-lines t)
 
 ;; ;; Keep cursor away from edges when scrolling up/down
 ;; (require 'smooth-scrolling)
@@ -98,16 +103,14 @@
 ;; Sentences do not need double spaces to end. Period.
 (set-default 'sentence-end-double-space nil)
 
-;; ;; Represent undo-history as an actual tree (visualize with C-x u)
-;; (setq undo-tree-mode-lighter "")
-;; (require 'undo-tree)
-;; (global-undo-tree-mode)
+;; Represent undo-history as an actual tree (visualize with C-x u)
+(setq undo-tree-mode-lighter "")
+(require 'undo-tree)
+(global-undo-tree-mode)
 
-
-;(TODO): This actually looks nice.
-;; ;; Add parts of each file's directory to the buffer name if not unique
-;; (require 'uniquify)
-;; (setq uniquify-buffer-name-style 'forward)
+;; Add parts of each file's directory to the buffer name if not unique
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
 
 
 ;; ;; A saner ediff
@@ -134,4 +137,4 @@
 
 (provide 'sane-defaults)
 
-;; sane-defaults.el ends here
+;;; sane-defaults.el ends here
