@@ -1,5 +1,4 @@
-;;;; sane-defauls.el
-;;;; Obtained from Magnar Sveen's .emacs.d/
+;;;; sane-defaults.el
 ;;;;
 ;;;; Handles the setting of important defaults, such as allowing
 ;;;; pasting selections from outside of Emacs, not using tabs, setting
@@ -12,8 +11,14 @@
 ;; Highlight matching parens.
 (show-paren-mode t)
 
+;; Show a few more lines of context with each page scroll.
+(setq next-screen-context-lines 5)
+
 ;; Allow pasting selection outside of Emacs
 (setq x-select-enable-clipboard t)
+
+;; Point exists /between/ characters in insert mode, over in overwrite mode.
+(bar-cursor-mode)
 
 ;; Auto refresh buffers
 (global-auto-revert-mode 1)
@@ -32,9 +37,6 @@
 ;; Don't need to use shift to mark things.
 ;; This frees up S-<arrow keys>, etc, as well.
 (setq shift-select-mode nil)
-
-;; next-line now creates newlines at the bottom of a buffer.
-(setq next-line-add-newlines t)
 
 ;; Transparently open compressed files
 (auto-compression-mode t)
@@ -90,8 +92,8 @@
 ;; Set to 't' to stop from breaking lines.
 (setq-default truncate-lines t)
 
-;; ;; Keep cursor away from edges when scrolling up/down
-;; (require 'smooth-scrolling)
+;; Keep cursor away from edges when scrolling up/down
+(require 'smooth-scrolling)
 
 ;; org-mode: Don't ruin S-arrow to switch windows please (use M-+ and
 ;; M-- instead to toggle)

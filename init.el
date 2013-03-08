@@ -11,7 +11,7 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; Disable splash screen at start-up.
-(setq inhibit-splash-screen t) 
+(setq inhibit-splash-screen t)
 
 ;; Appearance: (Set early on to avoid 'flicker' of changing colors, etc)
 
@@ -58,7 +58,7 @@
 ;; (setq save-place-file (expand-file-name ".places" user-emacs-directory))
 
 ;;;--------------------------------------------
-;;; Package management. 
+;;; Package management.
 ;;;
 ;;; Magnar Sveen's .emacs.d/ does this differently, but I'm not
 ;;; convinced his approach is actually better.
@@ -66,15 +66,24 @@
 (require 'setup-package)
 
 ;; List of packages I expect to have anywhere.
+;;
+;; Note: use of 'defvar' means that updating this list and then
+;; eval-ing the buffer won't actually update the my-packages var. May
+;; want to adopt a different idiom for this.
+
 (defvar my-packages '(
                       auctex
+                      dash ; dep for dired functionality
+                      dired-details
                       ; erlang ; Currently, package is broken by flymake (orphaned package)
                       haskell-mode
                       ido-ubiquitous
                       paredit
                       paredit-menu
                       smex
+                      smooth-scrolling
                       undo-tree
+                      yasnippet
                       zenburn-theme
                       )
   "A list of packages to ensure are installed at launch.")
@@ -89,7 +98,7 @@
 ;;; Requires, Loads, etc.
 
 ;; Paren-matching, active region, etc.
-(require 'sane-defaults) 
+(require 'sane-defaults)
 
 ;; ido-config
 (require 'setup-ido)
@@ -100,6 +109,9 @@
 
 ;; Language-specific setup files
 (require 'setup-lisp)
+
+;; YASnippet configuration.
+(require 'setup-yasnippet)
 
 ;; Map files to modes
 (require 'mode-mappings)
@@ -133,13 +145,11 @@
 (require 'smex)
 (smex-initialize)
 
-
 ;; Setup key bindings
 (require 'keybindings)
 
 ;; Theme loaded here due to bugs loading elsewhere...
 (load-theme 'zenburn t)
-
 
 ;; Emacs server
 (require 'server)
