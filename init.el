@@ -1,7 +1,32 @@
-
 ;;;; .emacs.d/init.el, Jacob Criner
 ;;;; 
 ;;;; Selections of this file were taken from Magnar Sveen's .emacs.d/
+
+;;;--------------------------------------------------
+;;;
+;;; Principles of Editors: A Friendly Reminder
+;;; (a.k.a. A Unified Field Theory of Editors)
+;;; auth: jcriner
+;;; date: 2/24/13
+;;;
+;;; Categories of internal behavior for a text editor:
+;;; * Editing: surgical insertion, deletion, and alteration of text
+;;; * Navigation: moving within a file, between buffers/files, searching
+;;; * Code generation: auto-completion, code snippets/templates
+;;; * Documentation: fetch language/library docs easily
+;;;
+;;; Additionally, automatic behavior:
+;;; * Functions attached to mode hooks; pre-commit test-runs, etc
+;;;
+;;; External access:
+;;; * Shells: Unix shells, language REPLs
+;;; * Compilation: easily compile and run code
+;;; * Version control: repo interaction
+;;;
+;;;--------------------------------------------------
+
+
+;; Electric-Pair-Mode, may want to enable and configure that.
 
 
 ;; Turn off mouse interface early on in startup to avoid momentary display
@@ -83,7 +108,6 @@
 ;; ido-config
 (require 'setup-ido)
 
-
 ;; Setup extensions
 (eval-after-load 'dired '(require 'setup-dired))
 
@@ -94,8 +118,9 @@
 (require 'mode-mappings)
 
 ;; Misc
+(require 'misc) ; This is where 'zap-up-to-char comes from.
 (require 'my-misc)
-; appearance
+; Appearance settings are also misc, too.
 
 
 ;; Functions (load all files in defuns-dir)
@@ -104,7 +129,6 @@
   (when (file-regular-p file)
     (load file)))
 
-;; .... defuns-dir.....
 
 
 ;; Diminish modeline clutter (maybe refactor to setup-* files)
@@ -118,11 +142,13 @@
 (require 'browse-kill-ring)
 (setq browse-kill-ring-quit-action 'save-and-restore)
 
-
 ;; Smart M-x is smart
 (require 'smex)
 (smex-initialize)
 
+
+;; iy-go-to-char
+(require 'iy-go-to-char)
 
 ;; Setup key bindings
 (require 'keybindings)

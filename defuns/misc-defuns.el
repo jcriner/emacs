@@ -1,6 +1,6 @@
 ;;;; misc-defuns.el
 ;;;;
-;;;; Also pulled from Magnar.
+;;;; Also pulled largely from Magnar.
 
 (defmacro create-simple-keybinding-command (name key)
   `(defmacro ,name (&rest fns)
@@ -18,6 +18,13 @@
 (create-simple-keybinding-command f11 "<f11>")
 (create-simple-keybinding-command f12 "<f12>")
 
+
+(defun back-to-indentation-or-beginning ()
+  "Go to start of indentation, or start of line if pressed again."
+  (interactive)
+  (if (= (point) (save-excursion (back-to-indentation) (point)))
+      (beginning-of-line)
+    (back-to-indentation)))
 
 (defun goto-line-with-feedback ()
   "Show line numbers temporarily, while prompting for the line number input"

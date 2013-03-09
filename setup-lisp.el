@@ -35,8 +35,8 @@
    'paredit-close-round)
   (eldoc-add-command 'electrify-return-if-match))
 
-;; Then add the lisp mode changes to the actual language modes.
-;; Should write a simple macro to expand into these.
+
+;; Add hooks for several lisp modes.
 (add-hook 'emacs-lisp-mode-hook 'lisp-modes-hook)
 (add-hook 'scheme-mode-hook 'lisp-modes-hook)
 (add-hook 'lisp-mode-hook 'lisp-modes-hook) ; Common Lisp

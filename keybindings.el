@@ -17,6 +17,11 @@
 
 ;;;---------------------------------------------------
 
+;; Beginning of line, but do what I really mean.
+(global-set-key (kbd "C-a") 'back-to-indentation-or-beginning)
+
+
+;; Hippie expand.
 (global-set-key (kbd "C-.") 'dabbrev-expand) ; will make hippie, later
 
 ;; Smart M-x
@@ -39,8 +44,8 @@
 (global-set-key (kbd "M-t s") 'transpose-sexps)
 (global-set-key (kbd "M-t p") 'transpose-params)
 
-;; Zap to char
-(global-set-key (kbd "M-z") 'zap-up-to-char) ;TODO: find defn
+;; Zap to char (consider M-Z for backwards killing to char).
+(global-set-key (kbd "M-z") 'zap-up-to-char)
 (global-set-key (kbd "M-Z") 'zap-to-char)
 
 
@@ -48,12 +53,9 @@
 ;;; Some Vim-based stuff.
 
 ;; iy-go-to-char - like f in Vim
-(global-set-key (kbd "M-m") 'jump-char-forward)
-(global-set-key (kbd "M-M") 'jump-char-backward)
+(global-set-key (kbd "M-m") 'iy-go-to-char)
+(global-set-key (kbd "M-M") 'iy-go-to-char-backward)
 
-;; vim's ci and co commands
-(global-set-key (kbd "M-I") 'change-inner)
-(global-set-key (kbd "M-O") 'change-outer)
 
 ;;;--------------------------------------------------
 
@@ -66,7 +68,7 @@
 
 
 ;; File finding
-(global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
+(global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
 (global-set-key (kbd "C-x f") 'recentf-ido-find-file)
 (global-set-key (kbd "C-x C-p") 'find-or-create-file-at-point)
 (global-set-key (kbd "C-x M-p") 'find-or-create-file-at-point-other-window)
