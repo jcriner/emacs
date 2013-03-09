@@ -5,6 +5,7 @@ backups/
 elpa/
 eshell/
 url/
+users/
 
 # Ignore all Emacs backup files.
 *~

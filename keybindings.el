@@ -20,8 +20,11 @@
 ;; Beginning of line, but do what I really mean.
 (global-set-key (kbd "C-a") 'back-to-indentation-or-beginning)
 
+;; Auto-indent on RET globally by default. (Maybe sane-defaults.el
+;; should have this)
+(global-set-key (kbd "RET") 'reindent-then-newline-and-indent)
 
-;; Hippie expand.
+;; Expansion binding
 (global-set-key (kbd "C-.") 'dabbrev-expand) ; will make hippie, later
 
 ;; Smart M-x
@@ -68,6 +71,7 @@
 
 
 ;; File finding
+(global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
 (global-set-key (kbd "C-x f") 'recentf-ido-find-file)
 (global-set-key (kbd "C-x C-p") 'find-or-create-file-at-point)
