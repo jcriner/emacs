@@ -63,11 +63,15 @@
 ;;;--------------------------------------------------
 
 
+;; Window commands:
+(global-set-key (kbd "C-x 3") 'split-window-right-and-move-there-dammit)
+
 ;; Create new frame
 (define-key global-map (kbd "C-x C-n") 'make-frame-command)
 
+;; TODO: Find the definition of this function and re-enable.
 ;; Jump to a definition in the current file. (This is awesome)
-(global-set-key (kbd "C-x C-i") 'ido-imenu)
+;(global-set-key (kbd "C-x C-i") 'ido-imenu)
 
 
 ;; File finding
