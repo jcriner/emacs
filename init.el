@@ -98,12 +98,17 @@
 ;; want to adopt a different idiom for this.
 
 (defvar my-packages '(
+                      ace-jump-mode
                       auctex
                       dash ; dep for dired functionality
                       dired-details
                       ; erlang ; Currently, package is broken by flymake (orphaned package)
+                      expand-region ; TODO: buggy, right now?
                       haskell-mode
                       ido-ubiquitous
+                      iy-go-to-char
+                      key-chord ; TODO: Need to configure. Badass, though.
+                      multiple-cursors ; TODO: need to configure
                       paredit
                       paredit-menu
                       smex

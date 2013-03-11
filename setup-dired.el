@@ -4,6 +4,9 @@
 ;;;; Note: Dependency on the Dash list library, as is.
 ;;;; Should learn more about Dash.
 
+;; Should alter this to reuse the dired buffer when drilling down into
+;; directories.
+
 (require 'dired)
 (require 'dash)
 

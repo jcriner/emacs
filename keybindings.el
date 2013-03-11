@@ -34,6 +34,7 @@
 ;; Expansion binding
 (global-set-key (kbd "C-.") 'dabbrev-expand) ; will make hippie, later
 
+
 ;; Smart M-x
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
@@ -65,6 +66,9 @@
 ;; iy-go-to-char - like f in Vim
 (global-set-key (kbd "M-m") 'iy-go-to-char)
 (global-set-key (kbd "M-M") 'iy-go-to-char-backward)
+
+;; ace-jump-mode
+(global-set-key (kbd "C-c SPC") 'ace-jump-mode)
 
 
 ;;;--------------------------------------------------
