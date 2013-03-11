@@ -1,0 +1,22 @@
+## A list of things that had irritating friction involved.
+##
+## Take them off of here when they're done being configured.
+
+Text mode:
+1. Auto-fill mode should be default.
+2. When using auto-fill-mode, should be more intelligent about bullet
+   points and such. (Note: Org-mode does this right by default. Worth
+   noting.)
+3. Investigate possibility of just using org-mode for most text file
+   things.
+
+Haskell-mode:
+1. Auto-indent for that seems to suck really hard. What's up with
+   that? Fix it.
+
+Writing modes:
+1. Don't understand them. Rewrite one of the existing ones. Something
+   simple to start with.
+
+
+

@@ -62,9 +62,9 @@
 (add-to-list 'load-path site-lisp-dir)
 
 ;; User specific settings (make machine specific?)
-(setq user-settings-dir
-      (concat user-emacs-directory "users/" user-login-name))
-(add-to-list 'load-path user-settings-dir)
+(setq machine-settings-dir
+      (concat user-emacs-directory "machine-specific/"))
+(add-to-list 'load-path machine-settings-dir)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -194,8 +194,8 @@
 ;; Load user specific stuff
 
 ;; Conclude init by setting up specifics for the current user
-(when (file-exists-p user-settings-dir)
-  (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$"))) 
+(when (file-exists-p machine-settings-dir)
+  (mapc 'load (directory-files machine-settings-dir nil "^[^#].*el$"))) 
                                         ; Note that this ignores .elc
                                         ; files. May want to revise
                                         ; this regexp slightly.
