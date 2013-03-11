@@ -9,6 +9,13 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-x C-k") 'kill-region) ; remap kill-region
 
+;; Some notes on the above: Firstly, what was C-x C-k, again? Hmm.
+;; Secondly, I could just have C-w work as was supposed to originally
+;; if it wasn't set on a region. On the other hand, leaving C-x C-k as
+;; is: when no region is selected, I would love if it would kill the
+;; whole line instead of just after the point.
+;; Similarly, copy should work on current line if not set to region.
+
 ;; Remap C-h to delete-backward-char.
 ;; (Note: M-h used to be bound to 'mark-paragraph.)
 (global-set-key (kbd "C-h") 'backward-delete-char-untabify)
