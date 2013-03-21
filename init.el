@@ -204,3 +204,4 @@
                                         ; Note that this ignores .elc
                                         ; files. May want to revise
                                         ; this regexp slightly.
+(put 'narrow-to-region 'disabled nil)

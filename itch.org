@@ -19,4 +19,7 @@ Writing modes:
    simple to start with.
 
 
-
+CPU Usage:
+0. I accidentally ran a macro "until bell ring" that would never terminate.
+   This caused the system to seize up; Emacs never relinquished control.
+   There should be a way to prevent this from happening in the future
