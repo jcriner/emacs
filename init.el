@@ -43,7 +43,7 @@
 
 ;; Note: DejaVu may be more readable. It has much better Unicode support, as well.
 ;; (set-default-font "DejaVu Sans Mono-10")
-(set-default-font "Anonymous Pro-11")
+(set-default-font "Anonymous Pro-12")
 
 
 ;; For some reason, this 'load-theme doesn't work here, and is placed
@@ -104,6 +104,7 @@
                       dired-details
                       ; erlang ; Currently, package is broken by flymake (orphaned package)
                       expand-region ; TODO: buggy, right now?
+                      evil
                       haskell-mode
                       ido-ubiquitous
                       iy-go-to-char
