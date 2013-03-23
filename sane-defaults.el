@@ -30,6 +30,9 @@
 ;; Show keystrokes in progress
 (setq echo-keystrokes 0.1)
 
+;; Column filling defaults to 80 chars on a line.
+(set-fill-column 80)
+
 ;; TODO: Need to understand what this does better.
 ;; Move files to trash when deleting
 ;(setq delete-by-moving-to-trash t)
