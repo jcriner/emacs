@@ -204,4 +204,7 @@
                                         ; Note that this ignores .elc
                                         ; files. May want to revise
                                         ; this regexp slightly.
+
+;; TODO: enabled all disabled commands.
 (put 'narrow-to-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
