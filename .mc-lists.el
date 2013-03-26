@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-semi&comma
         indent-for-tab-command
         paredit-kill
         paredit-newline
@@ -11,4 +12,9 @@
 
 (setq mc/cmds-to-run-once
       '(
+        back-to-indentation-or-beginning
+        c-electric-delete-forward
+        ido-find-file
+        smex
+        yas-expand
         ))

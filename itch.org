@@ -23,3 +23,17 @@ CPU Usage:
 0. I accidentally ran a macro "until bell ring" that would never terminate.
    This caused the system to seize up; Emacs never relinquished control.
    There should be a way to prevent this from happening in the future
+
+
+Paredit: Others things should be more like it.
+0. Specifically, just like 'kill' and such works on the tree structure
+   of Lisp, it'd be nice if other languages had similar behaviors.
+   Should think about how to build that into a major mode (probably by
+   writing a copy of a minor mode of some relatively simple language).
+1. On the other hand, this is reminding me that expand-region is
+   absurdly powerful. As is multiple-cursors. I should use those more.
+   Think of how I want to use them and get them bound nicely.
+
+Ace-Jump-Mode:
+0. All sorts of badass. Needs a single-press binding. C-; isn't taken,
+   but I actually like 'j;' using key-chord as well.

@@ -160,7 +160,12 @@
 
 
 ;; Expand region (by semantic units)
-(global-set-key (kbd "C-@") 'er/expand-region) ; don't like this keybinding.
+; TODO: Is this the right keybinding for this?
+; Works fine for a Kinesis, but not Thinkpad.
+; Added extra binding to Alt, now works fine.
+(global-set-key (kbd "C-@") 'er/expand-region)
+(global-set-key (kbd "M-@") 'er/expand-region)
+                                               
 
 ;; TODO: Read cursor documentation, and find keybindings for these bad boys.
 ;; Experimental multiple-cursors
