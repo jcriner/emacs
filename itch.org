@@ -23,3 +23,8 @@ CPU Usage:
 0. I accidentally ran a macro "until bell ring" that would never terminate.
    This caused the system to seize up; Emacs never relinquished control.
    There should be a way to prevent this from happening in the future
+
+Macro undo:
+0. Command 'undo' does not undo the entire application of a keyboard
+   macro, and I think it should. Fix that, and then press that
+   upstream, if somebody hasn't already done it.
