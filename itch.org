@@ -24,7 +24,6 @@ CPU Usage:
    This caused the system to seize up; Emacs never relinquished control.
    There should be a way to prevent this from happening in the future
 
-
 Paredit: Others things should be more like it.
 0. Specifically, just like 'kill' and such works on the tree structure
    of Lisp, it'd be nice if other languages had similar behaviors.
@@ -37,3 +36,8 @@ Paredit: Others things should be more like it.
 Ace-Jump-Mode:
 0. All sorts of badass. Needs a single-press binding. C-; isn't taken,
    but I actually like 'j;' using key-chord as well.
+
+Macro undo:
+0. Command 'undo' does not undo the entire application of a keyboard
+   macro, and I think it should. Fix that, and then press that
+   upstream, if somebody hasn't already done it.
