@@ -41,3 +41,10 @@ Macro undo:
 0. Command 'undo' does not undo the entire application of a keyboard
    macro, and I think it should. Fix that, and then press that
    upstream, if somebody hasn't already done it.
+
+Simple diff:
+0. May already exist: Want to be able to just hit M-x file-diff or
+   somethinglike that and have it show, in mycurrent buffer, the
+   difference between my current working buffer and the original copy,
+   plus an Occur functionality for showing me lines that have changed
+   in a separate buffer if I want.
