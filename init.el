@@ -199,8 +199,8 @@
   (server-start))
 
 
-;;--------------------------------------------------
-;; Load user specific stuff
+;;;--------------------------------------------------
+;;; Load user specific stuff
 
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p machine-settings-dir)
@@ -212,3 +212,18 @@
 ;; TODO: enabled all disabled commands.
 (put 'narrow-to-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+
+
+;;;--------------------------------------------------
+;;; Temporary dumping ground.
+
+;; Toggle selective-display based on where the cursor is.
+(defun toggle-selective-display-at-point ()
+  (interactive)
+  (set-selective-display
+   (if selective-display
+       nil
+     (+ 1 (current-column)))))
+
+;; Override the original 'selective-display' keybinding.
+(global-set-key (kbd "C-x $") 'toggle-selective-display-at-point)

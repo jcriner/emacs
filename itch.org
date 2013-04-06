@@ -47,3 +47,10 @@ Auto-complete:
    the popup is active which produces, say, numerics next to the
    completions. Then you just type the number next to a completion,
    and it completes.
+
+Simple diff:
+0. May already exist: Want to be able to just hit M-x file-diff or
+   somethinglike that and have it show, in mycurrent buffer, the
+   difference between my current working buffer and the original copy,
+   plus an Occur functionality for showing me lines that have changed
+   in a separate buffer if I want.

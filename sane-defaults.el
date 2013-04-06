@@ -11,6 +11,9 @@
 ;; Highlight matching parens.
 (show-paren-mode t)
 
+;; And auto-pair delimiters
+(electric-pair-mode t)
+
 ;; Show a few more lines of context with each page scroll.
 (setq next-screen-context-lines 5)
 
