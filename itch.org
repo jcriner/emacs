@@ -41,3 +41,9 @@ Macro undo:
 0. Command 'undo' does not undo the entire application of a keyboard
    macro, and I think it should. Fix that, and then press that
    upstream, if somebody hasn't already done it.
+
+Auto-complete:
+0. Modify the popup window so that I can hit some key-sequence while
+   the popup is active which produces, say, numerics next to the
+   completions. Then you just type the number next to a completion,
+   and it completes.

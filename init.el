@@ -100,6 +100,7 @@
 (defvar my-packages '(
                       ace-jump-mode
                       auctex
+                      auto-complete
                       dash ; dep for dired functionality
                       dired-details
                       ; erlang ; Currently, package is broken by flymake (orphaned package)
@@ -137,7 +138,6 @@
 ;; ido-config
 (require 'setup-ido)
 
-
 ;; Setup extensions
 (eval-after-load 'dired '(require 'setup-dired))
 
@@ -146,6 +146,9 @@
 
 ;; YASnippet configuration.
 (require 'setup-yasnippet)
+
+;; Auto-complete. (Only enables for elisp-mode, right now).
+(require 'setup-auto-complete)
 
 ;; Map files to modes
 (require 'mode-mappings)
@@ -188,7 +191,7 @@
 (require 'keybindings)
 
 ;; Theme loaded here due to bugs loading elsewhere...
-;disable (load-theme 'zenburn t)
+(load-theme 'zenburn t)
 
 ;; Emacs server
 (require 'server)
