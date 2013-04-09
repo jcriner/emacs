@@ -191,7 +191,7 @@
 (require 'keybindings)
 
 ;; Theme loaded here due to bugs loading elsewhere...
-(load-theme 'zenburn t)
+;(load-theme 'zenburn t)
 
 ;; Emacs server
 (require 'server)

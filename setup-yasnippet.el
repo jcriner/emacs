@@ -9,8 +9,8 @@
 
 (require 'yasnippet)
 
-;; TODO: Decide how to configure my snippets directory.
-;(setq yas/snippet-dirs '("~/.emacs.d/snippets")) ; created this file
+;; Set the snippets directory.
+(setq yas/snippet-dirs '("~/.emacs.d/snippets"))
 (yas/global-mode 1)
 
 ;; Jump to end of snippet definition
