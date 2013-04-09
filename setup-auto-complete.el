@@ -2,8 +2,9 @@
 ;;;
 ;;; Configure auto-completion using the auto-complete package.
 
-;; Turn it on.
 (require 'auto-complete)
+
+;; Turn it on.
 (auto-complete-mode)
 
 ;; Configuration, settings.
