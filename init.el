@@ -104,17 +104,19 @@
                       dash ; dep for dired functionality
                       dired-details
                       ; erlang ; Currently, package is broken by flymake (orphaned package)
-                      expand-region ; TODO: buggy, right now?
-                      evil
+                      expand-region
+                      evil ; bring on the Vim stuff
                       haskell-mode
                       ido-ubiquitous
                       iy-go-to-char
                       key-chord ; TODO: Need to configure. Badass, though.
+                      keyfreq
                       multiple-cursors ; TODO: need to configure
                       paredit
                       paredit-menu
                       smex
                       smooth-scrolling
+                      unbound ; conveniently list unbound keys
                       undo-tree
                       yasnippet
                       zenburn-theme
@@ -153,6 +155,9 @@
 ;; Map files to modes
 (require 'mode-mappings)
 
+;; List unbound key sequences.
+(require 'unbound)
+
 ;; Misc
 (require 'misc) ; This is where 'zap-up-to-char comes from.
 (require 'my-misc)
@@ -189,6 +194,15 @@
 
 ;; Setup key bindings
 (require 'keybindings)
+
+;; Keep track of my command usage.
+;; This information is intended to be used to:
+;; * Determine efficient keybindings
+;; * Find inefficiencies in my editing
+;; * Investigate further movement towards Evil.
+(require 'keyfreq)
+(keyfreq-mode 1)
+(keyfreq-autosave-mode 1)
 
 ;; Theme loaded here due to bugs loading elsewhere...
 ;(load-theme 'zenburn t)
