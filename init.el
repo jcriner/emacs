@@ -28,9 +28,6 @@
 ;;;--------------------------------------------------
 
 
-;; Electric-Pair-Mode, may want to enable and configure that.
-
-
 ;; Turn off mouse interface early on in startup to avoid momentary display
 ;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1)) 
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -101,6 +98,7 @@
                       ace-jump-mode
                       auctex
                       auto-complete
+                      change-inner ; emulate vim's ci and co commands
                       dash ; dep for dired functionality
                       dired-details
                       ; erlang ; Currently, package is broken by flymake (orphaned package)
