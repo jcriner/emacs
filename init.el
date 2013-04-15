@@ -227,3 +227,5 @@
 
 ;; Override the original 'selective-display' keybinding.
 (global-set-key (kbd "C-x $") 'toggle-selective-display-at-point)
+(put 'dired-find-alternate-file 'disabled nil)
+(put 'upcase-region 'disabled nil)
