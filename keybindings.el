@@ -67,6 +67,12 @@
 (global-set-key (kbd "M-m") 'iy-go-to-char)
 (global-set-key (kbd "M-M") 'iy-go-to-char-backward)
 
+;; Get Vim's ci and co commands.
+;; Evil could also help with this.
+(require 'change-inner)
+(global-set-key (kbd "M-i") 'change-inner)
+(global-set-key (kbd "M-o") 'change-outer)
+
 ;; ace-jump-mode
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
 
@@ -192,5 +198,23 @@
 ;; (global-set-key (kbd "C-~") 'mc/reverse-regions)
 ;; (global-set-key (kbd "M-~") 'mc/sort-regions)
 ;; (global-set-key (kbd "H-~") 'mc/insert-numbers)
+
+
+;; Switch C-l to a prefix command.
+(global-unset-key "\C-l")
+(defvar ctl-l-map (make-keymap)
+     "Keymap for local bindings and functions, prefixed by (^L)")
+(define-key global-map "\C-l" 'Control-L-prefix)
+(fset 'Control-L-prefix ctl-l-map)
+
+;; Standard remapping.
+
+(global-set-key (kbd "C-l C-l") 'recenter)
+;; TODO: These will be altered to be the commands I actually want.
+(define-key ctl-l-map "r"  'replace-string)
+(define-key ctl-l-map "R"  'replace-regexp)
+(define-key ctl-l-map "q"  'query-replace)
+(define-key ctl-l-map "Q"  'query-replace-regexp)
+(define-key ctl-l-map "h"  'command-history)
 
 (provide 'keybindings)

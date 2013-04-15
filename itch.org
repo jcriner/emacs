@@ -2,6 +2,12 @@
 ##
 ## Take them off of here when they're done being configured.
 
+General To-Dos:
+1. Learn more of Evil mode. See if it fits in my workflow.
+2. Rebind "C-l" to be a prefix key. Good times for all.
+3. Read and WRITE more elisp. Need this stuff.
+4. Learn a bit of the 'dash library. May replace 'cl.
+
 Text mode:
 1. Auto-fill mode should be default.
 2. When using auto-fill-mode, should be more intelligent about bullet
