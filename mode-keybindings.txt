@@ -1,0 +1,104 @@
+;; Mode-specific bindings that are still useful to see.
+
+`paredit-mode' Minor Mode Bindings:
+key             binding
+---             -------
+
+C-c             Prefix Command
+C-d             paredit-forward-delete
+C-j             paredit-newline
+C-k             paredit-kill
+ESC             Prefix Command
+"               paredit-doublequote
+(               paredit-open-round
+)               paredit-close-round
+;               paredit-semicolon
+[               paredit-open-square
+\               paredit-backslash
+]               paredit-close-square
+DEL             paredit-backward-delete
+C-(             paredit-backward-slurp-sexp
+C-)             paredit-forward-slurp-sexp
+C-{             paredit-backward-barf-sexp
+C-}             paredit-forward-barf-sexp
+<C-M-left>      paredit-backward-slurp-sexp
+<C-M-right>     paredit-backward-barf-sexp
+<C-left>        paredit-forward-barf-sexp
+<C-right>       paredit-forward-slurp-sexp
+<M-down>        paredit-splice-sexp-killing-forward
+<M-up>          paredit-splice-sexp-killing-backward
+<delete>        paredit-forward-delete
+<deletechar>    paredit-forward-delete
+
+C-c ESC         Prefix Command
+
+C-M-b           paredit-backward
+C-M-d           paredit-forward-down
+C-M-f           paredit-forward
+C-M-n           paredit-forward-up
+C-M-p           paredit-backward-down
+C-M-u           paredit-backward-up
+M-"             paredit-meta-doublequote
+M-(             paredit-wrap-round
+M-)             paredit-close-round-and-newline
+M-;             paredit-comment-dwim
+M-?             paredit-convolute-sexp
+M-J             paredit-join-sexps
+M-S             paredit-split-sexp
+M-d             paredit-forward-kill-word
+M-q             paredit-reindent-defun
+M-r             paredit-raise-sexp
+M-s             paredit-splice-sexp
+M-DEL           paredit-backward-kill-word
+ESC <C-left>    paredit-backward-slurp-sexp
+ESC <C-right>   paredit-backward-barf-sexp
+ESC <down>      paredit-splice-sexp-killing-forward
+ESC <up>        paredit-splice-sexp-killing-backward
+
+C-c C-M-l       paredit-recenter-on-sexp
+
+
+`yas-minor-mode' Minor Mode Bindings:
+key             binding
+---             -------
+
+C-c             Prefix Command
+TAB             yas-expand
+<tab>           yas-expand
+
+C-c &           Prefix Command
+
+C-c & C-n       yas-new-snippet
+C-c & C-s       yas-insert-snippet
+C-c & C-v       yas-visit-snippet-file
+
+
+`ido-mode' Minor Mode Bindings:
+key             binding
+---             -------
+
+<remap>         Prefix Command
+
+<remap> <dired>                 ido-dired
+<remap> <display-buffer>        ido-display-buffer
+<remap> <find-alternate-file>   ido-find-alternate-file
+<remap> <find-file>             ido-find-file
+<remap> <find-file-other-frame>
+                                ido-find-file-other-frame
+<remap> <find-file-other-window>
+                                ido-find-file-other-window
+<remap> <find-file-read-only>   ido-find-file-read-only
+<remap> <find-file-read-only-other-frame>
+                                ido-find-file-read-only-other-frame
+<remap> <find-file-read-only-other-window>
+                                ido-find-file-read-only-other-window
+<remap> <insert-buffer>         ido-insert-buffer
+<remap> <insert-file>           ido-insert-file
+<remap> <kill-buffer>           ido-kill-buffer
+<remap> <list-directory>        ido-list-directory
+<remap> <switch-to-buffer>      ido-switch-buffer
+<remap> <switch-to-buffer-other-frame>
+                                ido-switch-buffer-other-frame
+<remap> <switch-to-buffer-other-window>
+                                ido-switch-buffer-other-window
+<remap> <write-file>            ido-write-file

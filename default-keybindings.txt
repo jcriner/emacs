@@ -97,18 +97,17 @@ C-0 .. C-9      digit-argument
 <end>           end-of-buffer
 <execute>       execute-extended-command
 <f1>            help-command
+<f2>            2C-command
+<f3>            kmacro-start-macro-or-insert-counter
+<f4>            kmacro-end-or-call-macro
+
+;; Don't even have these.
 <f10>           menu-bar-open
 <f16>           clipboard-kill-ring-save
 <f18>           clipboard-yank
-<f2>            2C-command
 <f20>           clipboard-kill-region
-<f3>            kmacro-start-macro-or-insert-counter
-<f4>            kmacro-end-or-call-macro
-<find>          search-forward
-<header-line>   Prefix Command
-<help>          help-command
-<home>          beginning-of-buffer
-<iconify-frame>                 ignore-event
+
+;; Probably irrelevant.
 <insert>        overwrite-mode
 <insertchar>    overwrite-mode
 <insertline>    open-line
@@ -136,20 +135,6 @@ C-0 .. C-9      digit-argument
 <up>            previous-line
 <vertical-line>                 Prefix Command
 <vertical-scroll-bar>           Prefix Command
-
-C-c C-c         Prefix Command
-C-c SPC         ace-jump-mode
-C-c c           comment-or-uncomment-region
-C-c o           occur
-C-c u           uncomment-region
-C-c v           eval-buffer
-
-C-l C-l         recenter
-C-l Q           query-replace-regexp
-C-l R           replace-regexp
-C-l h           command-history
-C-l q           query-replace
-C-l r           replace-string
 
 C-x C-@         pop-global-mark
 C-x C-b         list-buffers
@@ -232,156 +217,6 @@ C-x <C-right>   next-buffer
 C-x <left>      previous-buffer
 C-x <right>     next-buffer
 
-M-0 .. M-9      digit-argument
-
-C-M-@           mark-sexp
-C-M-a           beginning-of-defun
-C-M-c           exit-recursive-edit
-C-M-e           end-of-defun
-C-M-h           mark-defun
-C-M-j           indent-new-comment-line
-C-M-k           kill-sexp
-C-M-l           reposition-window
-C-M-o           split-line
-C-M-r           isearch-backward-regexp
-C-M-s           isearch-forward-regexp
-C-M-t           transpose-sexps
-C-M-v           scroll-other-window
-C-M-w           append-next-kill
-ESC ESC         Prefix Command
-C-M-\           indent-region
-M-SPC           just-one-space
-M-!             shell-command
-M-$             ispell-word
-M-%             query-replace
-M-&             async-shell-command
-M-'             abbrev-prefix-mark
-M-*             pop-tag-mark
-M--             negative-argument
-M-/             dabbrev-expand
-M-:             eval-expression
-M-<             beginning-of-buffer
-M-=             count-words-region
-M->             end-of-buffer
-M-@             er/expand-region
-M-M             iy-go-to-char-backward
-M-X             smex-major-mode-commands
-M-Z             zap-to-char
-M-\             delete-horizontal-space
-M-^             delete-indentation
-M-`             tmm-menubar
-M-a             backward-sentence
-M-b             backward-word
-M-c             capitalize-word
-M-e             forward-sentence
-M-f             forward-word
-M-g             Prefix Command
-M-h             backward-kill-word
-M-i             change-inner
-M-j             indent-new-comment-line
-M-k             kill-sentence
-M-l             downcase-word
-M-m             iy-go-to-char
-M-o             change-outer
-M-t             Prefix Command
-M-u             upcase-word
-M-v             scroll-down-command
-M-w             kill-ring-save
-M-x             smex
-M-y             yank-pop
-M-z             zap-up-to-char
-M-{             backward-paragraph
-M-|             shell-command-on-region
-M-}             forward-paragraph
-M-~             not-modified
-C-M-S-v         scroll-other-window-down
-C-M-SPC         mark-sexp
-C-M-%           query-replace-regexp
-C-M--           negative-argument
-C-M-.           find-tag-regexp
-C-M-/           dabbrev-completion
-C-M-0 .. C-M-9  digit-argument
-ESC <C-backspace>               backward-kill-sexp
-ESC <C-delete>                  backward-kill-sexp
-ESC <C-down>                    down-list
-ESC <C-end>                     end-of-defun
-ESC <C-home>                    beginning-of-defun
-ESC <C-up>      backward-up-list
-ESC <begin>     beginning-of-buffer-other-window
-ESC <end>       end-of-buffer-other-window
-ESC <home>      beginning-of-buffer-other-window
-ESC <left>      backward-word
-ESC <next>      scroll-other-window
-ESC <prior>     scroll-other-window-down
-ESC <right>     forward-word
-
-M-t l           transpose-lines
-M-t p           transpose-params
-M-t s           transpose-sexps
-M-t w           transpose-words
-
-M-g ESC         Prefix Command
-M-g g           goto-line
-M-g n           next-error
-M-g p           previous-error
-
-M-ESC ESC       keyboard-escape-quit
-M-ESC :         eval-expression
-
-C-S-c C-S-c     mc/edit-lines
-
-<remap> <goto-line>             goto-line-with-feedback
-
-<help> C-a      about-emacs
-<help> C-c      describe-copying
-<help> C-d      view-emacs-debugging
-<help> C-e      view-external-packages
-<help> C-f      view-emacs-FAQ
-<help> C-h      help-for-help
-<help> RET      view-order-manuals
-<help> C-n      view-emacs-news
-<help> C-o      describe-distribution
-<help> C-p      view-emacs-problems
-<help> C-t      view-emacs-todo
-<help> C-w      describe-no-warranty
-<help> C-\      describe-input-method
-<help> .        display-local-help
-<help> 4        Prefix Command
-<help> ?        help-for-help
-<help> C        describe-coding-system
-<help> F        Info-goto-emacs-command-node
-<help> I        describe-input-method
-<help> K        Info-goto-emacs-key-command-node
-<help> L        describe-language-environment
-<help> P        describe-package
-<help> S        info-lookup-symbol
-<help> a        apropos-command
-<help> b        describe-bindings
-<help> c        describe-key-briefly
-<help> d        apropos-documentation
-<help> e        view-echo-area-messages
-<help> f        describe-function
-<help> g        describe-gnu-project
-<help> h        view-hello-file
-<help> i        info
-<help> k        describe-key
-<help> l        view-lossage
-<help> m        describe-mode
-<help> n        view-emacs-news
-<help> p        finder-by-keyword
-<help> q        help-quit
-<help> r        info-emacs-manual
-<help> s        describe-syntax
-<help> t        help-with-tutorial
-<help> v        describe-variable
-<help> w        where-is
-<help> <f1>     help-for-help
-<help> <help>   help-for-help
-
-<f2> 2          2C-two-columns
-<f2> b          2C-associate-buffer
-<f2> s          2C-split
-<f2> <f2>       2C-two-columns
 
 C-c C-c ESC     Prefix Command
 
@@ -485,6 +320,76 @@ C-x v u         vc-revert
 C-x v v         vc-next-action
 C-x v ~         vc-revision-other-window
 
+C-c C-c M-x     execute-extended-command
+
+C-x a i g       inverse-add-global-abbrev
+C-x a i l       inverse-add-mode-abbrev
+
+
+;; These are generally defined by me.
+C-c C-c         Prefix Command
+C-c SPC         ace-jump-mode
+C-c c           comment-or-uncomment-region
+C-c o           occur
+C-c u           uncomment-region
+C-c v           eval-buffer
+
+C-l C-l         recenter
+C-l Q           query-replace-regexp
+C-l R           replace-regexp
+C-l h           command-history
+C-l q           query-replace
+C-l r           replace-string
+
+
+M-0 .. M-9      digit-argument
+
+M-SPC           just-one-space
+M-!             shell-command
+M-$             ispell-word
+M-%             query-replace
+M-&             async-shell-command
+M-'             abbrev-prefix-mark
+M-*             pop-tag-mark
+M--             negative-argument
+M-/             dabbrev-expand
+M-:             eval-expression
+M-<             beginning-of-buffer
+M-=             count-words-region
+M->             end-of-buffer
+M-@             er/expand-region
+M-M             iy-go-to-char-backward
+M-X             smex-major-mode-commands
+M-Z             zap-to-char
+M-\             delete-horizontal-space
+M-^             delete-indentation
+M-`             tmm-menubar
+M-a             backward-sentence
+M-b             backward-word
+M-c             capitalize-word
+M-e             forward-sentence
+M-f             forward-word
+M-g             Prefix Command
+M-h             backward-kill-word
+M-i             change-inner
+M-j             indent-new-comment-line
+M-k             kill-sentence
+M-l             downcase-word
+M-m             iy-go-to-char
+M-o             change-outer
+M-t             Prefix Command
+M-u             upcase-word
+M-v             scroll-down-command
+M-w             kill-ring-save
+M-x             smex
+M-y             yank-pop
+M-z             zap-up-to-char
+M-{             backward-paragraph
+M-|             shell-command-on-region
+M-}             forward-paragraph
+M-~             not-modified
+
+
 M-s h f         hi-lock-find-patterns
 M-s h l         highlight-lines-matching-regexp
 M-s h p         highlight-phrase
@@ -496,120 +401,53 @@ M-g M-g         goto-line
 M-g M-n         next-error
 M-g M-p         previous-error
 
+C-M-@           mark-sexp
+C-M-a           beginning-of-defun
+C-M-c           exit-recursive-edit
+C-M-e           end-of-defun
+C-M-h           mark-defun
+C-M-j           indent-new-comment-line
+C-M-k           kill-sexp
+C-M-l           reposition-window
+C-M-o           split-line
+C-M-r           isearch-backward-regexp
+C-M-s           isearch-forward-regexp
+C-M-t           transpose-sexps
+C-M-v           scroll-other-window
+C-M-w           append-next-kill
+ESC ESC         Prefix Command
+C-M-\           indent-region
 
-<help> 4 i      info-other-window
+C-M-S-v         scroll-other-window-down
+C-M-SPC         mark-sexp
+C-M-%           query-replace-regexp
+C-M--           negative-argument
+C-M-.           find-tag-regexp
+C-M-/           dabbrev-completion
+C-M-0 .. C-M-9  digit-argument
+ESC <C-bkspace> backward-kill-sexp
+ESC <C-delete>  backward-kill-sexp
+ESC <C-down>    down-list
+ESC <C-end>     end-of-defun
+ESC <C-home>    beginning-of-defun
+ESC <C-up>      backward-up-list
+ESC <begin>     beginning-of-buffer-other-window
+ESC <end>       end-of-buffer-other-window
+ESC <home>      beginning-of-buffer-other-window
+ESC <left>      backward-word
+ESC <next>      scroll-other-window
+ESC <prior>     scroll-other-window-down
+ESC <right>     forward-word
 
-C-c C-c M-x     execute-extended-command
+M-ESC ESC       keyboard-escape-quit
+M-ESC :         eval-expression
 
-C-x a i g       inverse-add-global-abbrev
-C-x a i l       inverse-add-mode-abbrev
+C-S-c C-S-c     mc/edit-lines
 
-
-
-`paredit-mode' Minor Mode Bindings:
-key             binding
----             -------
-
-C-c             Prefix Command
-C-d             paredit-forward-delete
-C-j             paredit-newline
-C-k             paredit-kill
-ESC             Prefix Command
-"               paredit-doublequote
-(               paredit-open-round
-)               paredit-close-round
-;               paredit-semicolon
-[               paredit-open-square
-\               paredit-backslash
-]               paredit-close-square
-DEL             paredit-backward-delete
-C-(             paredit-backward-slurp-sexp
-C-)             paredit-forward-slurp-sexp
-C-{             paredit-backward-barf-sexp
-C-}             paredit-forward-barf-sexp
-<C-M-left>      paredit-backward-slurp-sexp
-<C-M-right>     paredit-backward-barf-sexp
-<C-left>        paredit-forward-barf-sexp
-<C-right>       paredit-forward-slurp-sexp
-<M-down>        paredit-splice-sexp-killing-forward
-<M-up>          paredit-splice-sexp-killing-backward
-<delete>        paredit-forward-delete
-<deletechar>    paredit-forward-delete
-
-C-c ESC         Prefix Command
-
-C-M-b           paredit-backward
-C-M-d           paredit-forward-down
-C-M-f           paredit-forward
-C-M-n           paredit-forward-up
-C-M-p           paredit-backward-down
-C-M-u           paredit-backward-up
-M-"             paredit-meta-doublequote
-M-(             paredit-wrap-round
-M-)             paredit-close-round-and-newline
-M-;             paredit-comment-dwim
-M-?             paredit-convolute-sexp
-M-J             paredit-join-sexps
-M-S             paredit-split-sexp
-M-d             paredit-forward-kill-word
-M-q             paredit-reindent-defun
-M-r             paredit-raise-sexp
-M-s             paredit-splice-sexp
-M-DEL           paredit-backward-kill-word
-ESC <C-left>    paredit-backward-slurp-sexp
-ESC <C-right>   paredit-backward-barf-sexp
-ESC <down>      paredit-splice-sexp-killing-forward
-ESC <up>        paredit-splice-sexp-killing-backward
-
-C-c C-M-l       paredit-recenter-on-sexp
+<remap> <goto-line>             goto-line-with-feedback
 
 
-`yas-minor-mode' Minor Mode Bindings:
-key             binding
----             -------
-
-C-c             Prefix Command
-TAB             yas-expand
-<tab>           yas-expand
-
-C-c &           Prefix Command
-
-C-c & C-n       yas-new-snippet
-C-c & C-s       yas-insert-snippet
-C-c & C-v       yas-visit-snippet-file
-
-
-`ido-mode' Minor Mode Bindings:
-key             binding
----             -------
-
-<remap>         Prefix Command
-
-<remap> <dired>                 ido-dired
-<remap> <display-buffer>        ido-display-buffer
-<remap> <find-alternate-file>   ido-find-alternate-file
-<remap> <find-file>             ido-find-file
-<remap> <find-file-other-frame>
-                                ido-find-file-other-frame
-<remap> <find-file-other-window>
-                                ido-find-file-other-window
-<remap> <find-file-read-only>   ido-find-file-read-only
-<remap> <find-file-read-only-other-frame>
-                                ido-find-file-read-only-other-frame
-<remap> <find-file-read-only-other-window>
-                                ido-find-file-read-only-other-window
-<remap> <insert-buffer>         ido-insert-buffer
-<remap> <insert-file>           ido-insert-file
-<remap> <kill-buffer>           ido-kill-buffer
-<remap> <list-directory>        ido-list-directory
-<remap> <switch-to-buffer>      ido-switch-buffer
-<remap> <switch-to-buffer-other-frame>
-                                ido-switch-buffer-other-frame
-<remap> <switch-to-buffer-other-window>
-                                ido-switch-buffer-other-window
-<remap> <write-file>            ido-write-file
-
-
+;; This Minor Mode is only left because the functionality is so essential.
 `undo-tree-mode' Minor Mode Bindings:
 key             binding
 ---             -------
@@ -634,67 +472,6 @@ C-x r U         undo-tree-restore-state-from-register
 C-x r u         undo-tree-save-state-to-register
 
 
-`subword-mode' Minor Mode Bindings:
-key             binding
----             -------
-
-<remap>         Prefix Command
-
-<remap> <backward-kill-word>    subword-backward-kill
-<remap> <backward-word>         subword-backward
-<remap> <capitalize-word>       subword-capitalize
-<remap> <downcase-word>         subword-downcase
-<remap> <forward-word>          subword-forward
-<remap> <kill-word>             subword-kill
-<remap> <mark-word>             subword-mark
-<remap> <transpose-words>       subword-transpose
-<remap> <upcase-word>           subword-upcase
-
-
-`winner-mode' Minor Mode Bindings:
-key             binding
----             -------
-
-C-c             Prefix Command
-
-C-c <left>      winner-undo
-C-c <right>     winner-redo
-
-
-`recentf-mode' Minor Mode Bindings:
-key             binding
----             -------
-
-
-`elisp-slime-nav-mode' Minor Mode Bindings:
-key             binding
----             -------
-
-C-c             Prefix Command
-ESC             Prefix Command
-
-C-c C-d         Prefix Command
-
-M-,             pop-tag-mark
-M-.             elisp-slime-nav-find-elisp-thing-at-point
-
-C-c C-d C-d     elisp-slime-nav-describe-elisp-thing-at-point
-C-c C-d d       elisp-slime-nav-describe-elisp-thing-at-point
-
-
-Major Mode Bindings:
-key             binding
----             -------
-
-RET             electrify-return-if-match
-ESC             Prefix Command
-
-M-TAB           completion-at-point
-C-M-q           indent-pp-sexp
-C-M-x           eval-defun
-
-
-
 
 Function key map translations:
 key             binding
@@ -710,6 +487,7 @@ C-@             C-SPC
 C-x @ Prefix Command
 
 C-x @ S         event-apply-shift-modifier
+
 C-x @ a         event-apply-alt-modifier
 C-x @ c         event-apply-control-modifier
 C-x @ h         event-apply-hyper-modifier
@@ -722,6 +500,58 @@ key             binding
 ---             -------
 
 ESC             Prefix Command
+
+;; Help section.
+<help> C-a      about-emacs
+<help> C-c      describe-copying
+<help> C-d      view-emacs-debugging
+<help> C-e      view-external-packages
+<help> C-f      view-emacs-FAQ
+<help> C-h      help-for-help
+<help> RET      view-order-manuals
+<help> C-n      view-emacs-news
+<help> C-o      describe-distribution
+<help> C-p      view-emacs-problems
+<help> C-t      view-emacs-todo
+<help> C-w      describe-no-warranty
+<help> C-\      describe-input-method
+<help> .        display-local-help
+<help> 4        Prefix Command
+<help> ?        help-for-help
+<help> C        describe-coding-system
+<help> F        Info-goto-emacs-command-node
+<help> I        describe-input-method
+<help> K        Info-goto-emacs-key-command-node
+<help> L        describe-language-environment
+<help> P        describe-package
+<help> S        info-lookup-symbol
+<help> a        apropos-command
+<help> b        describe-bindings
+<help> c        describe-key-briefly
+<help> d        apropos-documentation
+<help> e        view-echo-area-messages
+<help> f        describe-function
+<help> g        describe-gnu-project
+<help> h        view-hello-file
+<help> i        info
+<help> k        describe-key
+<help> l        view-lossage
+<help> m        describe-mode
+<help> n        view-emacs-news
+<help> p        finder-by-keyword
+<help> q        help-quit
+<help> r        info-emacs-manual
+<help> s        describe-syntax
+<help> t        help-with-tutorial
+<help> v        describe-variable
+<help> w        where-is
+<help> <f1>     help-for-help
+<help> <help>   help-for-help
+
+<f2> 2          2C-two-columns
+<f2> b          2C-associate-buffer
+<f2> s          2C-split
+<f2> <f2>       2C-two-columns
 
 
 ;; Bunch of stuff about inserting random symbols.
