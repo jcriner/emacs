@@ -40,62 +40,6 @@ C-SPC           set-mark-command
 C--             negative-argument
 C-.             dabbrev-expand
 C-0 .. C-9      digit-argument
-<C-M-down>      down-list
-<C-M-end>       end-of-defun
-<C-M-home>      beginning-of-defun
-<C-M-up>        backward-up-list
-<C-S-backspace>                 kill-whole-line
-<C-backspace>                   backward-kill-word
-<C-delete>      kill-word
-<C-down>        forward-paragraph
-<C-down-mouse-1>                mouse-buffer-menu
-<C-down-mouse-2>                facemenu-menu
-<C-end>         end-of-buffer
-<C-home>        beginning-of-buffer
-<C-insert>      kill-ring-save
-<C-insertchar>  kill-ring-save
-<C-mouse-4>     mwheel-scroll
-<C-mouse-5>     mwheel-scroll
-<C-next>        scroll-left
-<C-prior>       scroll-right
-<C-tab>         completion-at-point
-<C-up>          backward-paragraph
-<M-begin>       beginning-of-buffer-other-window
-<M-down-mouse-1>                mouse-drag-secondary
-<M-drag-mouse-1>                mouse-set-secondary
-<M-end>         end-of-buffer-other-window
-<M-home>        beginning-of-buffer-other-window
-<M-left>        left-word
-<M-mouse-1>     mouse-start-secondary
-<M-mouse-2>     mouse-yank-secondary
-<M-mouse-3>     mouse-secondary-save-then-kill
-<M-next>        scroll-other-window
-<M-prior>       scroll-other-window-down
-<M-right>       right-word
-<S-delete>      kill-region
-<S-down>        windmove-down
-<S-down-mouse-1>                mouse-appearance-menu
-<S-insert>      yank
-<S-insertchar>  yank
-<S-left>        windmove-left
-<S-mouse-3>     kmacro-end-call-mouse
-<S-mouse-4>     mwheel-scroll
-<S-mouse-5>     mwheel-scroll
-<S-right>       windmove-right
-<S-up>          windmove-up
-<again>         repeat-complex-command
-<begin>         beginning-of-buffer
-<compose-last-chars>            compose-last-chars
-<copy>          clipboard-kill-ring-save
-<cut>           clipboard-kill-region
-<delete-frame>  handle-delete-frame
-<deleteline>    kill-line
-<double-mouse-1>                mouse-set-point
-<down>          next-line
-<down-mouse-1>  mouse-drag-region
-<drag-mouse-1>  mouse-set-region
-<end>           end-of-buffer
-<execute>       execute-extended-command
 <f1>            help-command
 <f2>            2C-command
 <f3>            kmacro-start-macro-or-insert-counter
@@ -106,35 +50,6 @@ C-0 .. C-9      digit-argument
 <f16>           clipboard-kill-ring-save
 <f18>           clipboard-yank
 <f20>           clipboard-kill-region
-
-;; Probably irrelevant.
-<insert>        overwrite-mode
-<insertchar>    overwrite-mode
-<insertline>    open-line
-<left>          left-char
-<make-frame-visible>            ignore-event
-<menu>          execute-extended-command
-<mode-line>     Prefix Command
-<mouse-1>       mouse-set-point
-<mouse-2>       mouse-yank-primary
-<mouse-3>       mouse-save-then-kill
-<mouse-4>       mwheel-scroll
-<mouse-5>       mwheel-scroll
-<mouse-movement>                ignore
-<next>          scroll-up-command
-<open>          find-file
-<paste>         clipboard-yank
-<prior>         scroll-down-command
-<redo>          repeat-complex-command
-<remap>         Prefix Command
-<right>         right-char
-<select-window>                 handle-select-window
-<switch-frame>                  handle-switch-frame
-<triple-mouse-1>                mouse-set-point
-<undo>          undo
-<up>            previous-line
-<vertical-line>                 Prefix Command
-<vertical-scroll-bar>           Prefix Command
 
 C-x C-@         pop-global-mark
 C-x C-b         list-buffers
