@@ -167,9 +167,6 @@
 
 ;; Expand region (by semantic units)
 ; TODO: Is this the right keybinding for this?
-; Works fine for a Kinesis, but not Thinkpad.
-; Added extra binding to Alt, now works fine.
-(global-set-key (kbd "C-@") 'er/expand-region)
 (global-set-key (kbd "M-@") 'er/expand-region)
                                                
 
