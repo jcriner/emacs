@@ -3,8 +3,13 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-colon
+        c-electric-paren
         c-electric-semi&comma
+        c-electric-star
         indent-for-tab-command
+        paredit-forward-delete
+        paredit-forward-kill-word
         paredit-kill
         paredit-newline
         paredit-semicolon
@@ -15,6 +20,8 @@
         back-to-indentation-or-beginning
         c-electric-delete-forward
         ido-find-file
+        iy-go-to-char--internal
+        reindent-then-newline-and-indent
         smex
         yas-expand
         ))
