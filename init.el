@@ -101,15 +101,16 @@
                       change-inner ; emulate vim's ci and co commands
                       dash ; dep for dired functionality
                       dired-details
-                      ; erlang ; Currently, package is broken by flymake (orphaned package)
+                      erlang
                       expand-region
                       evil ; bring on the Vim stuff
                       haskell-mode
                       ido-ubiquitous
                       iy-go-to-char
-                      key-chord ; TODO: Need to configure. Badass, though.
+                      key-chord ; TODO: Need to configure.
                       keyfreq
-                      multiple-cursors ; TODO: need to configure
+                      magit ; Git management from Emacs.
+                      multiple-cursors ; TODO: need to configure more. Badass.
                       paredit
                       paredit-menu
                       smex
