@@ -107,6 +107,7 @@
                       haskell-mode
                       ido-ubiquitous
                       iy-go-to-char
+                      js2-mode ; improved javascript editing
                       key-chord ; TODO: Need to configure. Badass, though.
                       keyfreq
                       multiple-cursors ; TODO: need to configure
