@@ -3,9 +3,6 @@
 ;;;; Handles the setting of important defaults, such as allowing
 ;;;; pasting selections from outside of Emacs, not using tabs, setting
 ;;;; default column width, and so on.
-;;;;
-;;;; As of 2/24/13, there are commented out sections from packages I
-;;;; don't use.
 
 
 ;; Highlight matching parens.
@@ -95,8 +92,8 @@
 ;; Set to 't' to stop from breaking lines.
 (setq-default truncate-lines t)
 
-;; Keep cursor away from edges when scrolling up/down
-(require 'smooth-scrolling)
+;; ;; Keep cursor away from edges when scrolling up/down
+;; (require 'smooth-scrolling)
 
 ;; org-mode: Don't ruin S-arrow to switch windows please (use M-+ and
 ;; M-- instead to toggle)
@@ -116,17 +113,6 @@
 ;; Add parts of each file's directory to the buffer name if not unique
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
-
-
-;; ;; A saner ediff
-;; (setq ediff-diff-options "-w")
-;; (setq ediff-split-window-function 'split-window-horizontally)
-;; (setq ediff-window-setup-function 'ediff-setup-windows-plain)
-
-
-;; ;; Nic says eval-expression-print-level needs to be set to nil (turned off) so
-;; ;; that you can always see what's happening.
-;; (setq eval-expression-print-level nil)
 
 
 ;; When popping the mark, continue popping until the cursor actually moves
