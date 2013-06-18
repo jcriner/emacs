@@ -107,10 +107,11 @@
                       haskell-mode
                       ido-ubiquitous
                       iy-go-to-char
+                      js2-mode ; improved javascript editing
                       key-chord ; TODO: Need to configure.
                       keyfreq
                       magit ; Git management from Emacs.
-                      multiple-cursors ; TODO: need to configure more. Badass.
+                      multiple-cursors ; TODO: need to configure more.
                       paredit
                       paredit-menu
                       smex

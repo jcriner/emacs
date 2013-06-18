@@ -1,0 +1,6 @@
+# name: <obj>.each do |index| ... end
+# key: each
+# --
+each do |${index}|
+     $0
+end

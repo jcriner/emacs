@@ -43,6 +43,9 @@
 ;; Per Steve Yegge's advice:
 (global-set-key (kbd "C-x C-m") 'smex)
 
+;; Improve 'open-line' functionality.
+(global-set-key (kbd "C-o") 'smart-open-line)
+(global-set-key (kbd "C-O") 'smart-open-line-above)
 
 ;; Make the shell more convenient.
 (global-set-key (kbd "C-z") 'shell)
