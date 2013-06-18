@@ -74,7 +74,6 @@
 (global-set-key (kbd "M-o") 'change-outer)
 
 ;; ace-jump-mode
-(global-set-key (kbd "S-SPC") 'ace-jump-mode)
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
 
 

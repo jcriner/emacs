@@ -3,25 +3,26 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        back-to-indentation-or-beginning
         c-electric-colon
+        c-electric-delete-forward
         c-electric-paren
         c-electric-semi&comma
         c-electric-star
         indent-for-tab-command
+        kill-region
         paredit-forward-delete
         paredit-forward-kill-word
         paredit-kill
         paredit-newline
+        paredit-open-round
         paredit-semicolon
         ))
 
 (setq mc/cmds-to-run-once
       '(
-        back-to-indentation-or-beginning
-        c-electric-delete-forward
         ido-find-file
         iy-go-to-char--internal
         reindent-then-newline-and-indent
         smex
-        yas-expand
         ))
