@@ -48,6 +48,20 @@
            line)
    'face 'linum)))
 
+
+;; Can make use of this function in any major mode, making it all the
+;; more useful. Bound to C-c C-e.
+(defun eval-and-replace ()
+  "Replace the preceding sexp with its value."
+  (interactive)
+  (backward-kill-sexp)
+  (condition-case nil
+      (prin1 (eval (read (current-kill 0)))
+             (current-buffer))
+    (error (message "Invalid expression")
+           (insert (current-kill 0)))))
+
+
 ;; TODO: Figure out how this works, looks very cool.
 ;; Fix kmacro-edit-lossage, it's normal implementation
 ;; is bound tightly to C-h

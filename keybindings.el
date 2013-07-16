@@ -45,7 +45,7 @@
 
 ;; Improve 'open-line' functionality.
 (global-set-key (kbd "C-o") 'smart-open-line)
-(global-set-key (kbd "C-O") 'smart-open-line-above)
+(global-set-key (kbd "C-S-o") 'smart-open-line-above)
 
 ;; Make the shell more convenient.
 (global-set-key (kbd "C-z") 'shell)
@@ -139,6 +139,10 @@
 
 ;; Eval buffer
 (global-set-key (kbd "C-c v") 'eval-buffer)
+
+;; Eval and replace sexp
+(global-set-key (kbd "C-c e") 'eval-and-replace)
+(global-set-key (kbd "C-c C-e") 'eval-and-replace)
 
 ;; Jump from file to containing directory
 (autoload 'dired-jump "dired")
