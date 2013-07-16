@@ -2,6 +2,15 @@
 ##
 ## Take them off of here when they're done being configured.
 
+Examples!
+1. Write examples of common text editing problems that I, and others,
+   have faced. This will help in crafting examples for my book.
+2. Book direction should be primarily driven by elisp, help commands,
+   and understanding of the M-x FUNCTION-NAME interface, first and
+   foremost.
+3. Also should blog on dissections of interesting extensions, and how
+   they were implemented.
+
 General To-Dos:
 1. Learn more of Evil mode. See if it fits in my workflow.
 2. Rebind "C-l" to be a prefix key. Good times for all.
@@ -56,7 +65,7 @@ Auto-complete:
 
 Simple diff:
 0. May already exist: Want to be able to just hit M-x file-diff or
-   somethinglike that and have it show, in mycurrent buffer, the
+   something like that and have it show, in my current buffer, the
    difference between my current working buffer and the original copy,
    plus an Occur functionality for showing me lines that have changed
-   in a separate buffer if I want.
+   in a separate buffer if I want. (Resolved: VC/Magit both have.)

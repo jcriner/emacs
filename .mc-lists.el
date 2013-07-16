@@ -5,16 +5,23 @@
       '(
         back-to-indentation-or-beginning
         c-electric-colon
+        c-electric-delete-forward
+        c-electric-lt-gt
         c-electric-paren
         c-electric-semi&comma
+        c-electric-slash
         c-electric-star
+        dabbrev-expand
         indent-for-tab-command
+        kill-region
         paredit-forward-delete
         paredit-forward-kill-word
         paredit-kill
         paredit-newline
+        paredit-open-round
         paredit-semicolon
         yas-expand
+        zap-up-to-char
         ))
 
 (setq mc/cmds-to-run-once
