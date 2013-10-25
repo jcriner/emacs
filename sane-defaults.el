@@ -4,6 +4,8 @@
 ;;;; pasting selections from outside of Emacs, not using tabs, setting
 ;;;; default column width, and so on.
 
+;; For anything that uses tabs, let's have reasonable tab size.
+(setq-default tab-width 2)
 
 ;; Highlight matching parens.
 (show-paren-mode t)
