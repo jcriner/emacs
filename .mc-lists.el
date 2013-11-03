@@ -12,6 +12,8 @@
         c-electric-slash
         c-electric-star
         dabbrev-expand
+        end-of-buffer
+        eval-and-replace
         indent-for-tab-command
         kill-region
         paredit-forward-delete

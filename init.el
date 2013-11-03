@@ -38,11 +38,6 @@
 
 ;; Appearance: (Set early on to avoid 'flicker' of changing colors, etc)
 
-;; Note: DejaVu may be more readable. It has much better Unicode support, as well.
-;; (set-default-font "DejaVu Sans Mono-10")
-(set-default-font "Anonymous Pro-12")
-
-
 ;; For some reason, this 'load-theme doesn't work here, and is placed
 ;; later on in the file.
 ;;
@@ -202,7 +197,18 @@
 (keyfreq-mode 1)
 (keyfreq-autosave-mode 1)
 
-;; Theme loaded here due to bugs loading elsewhere...
+
+;; GUI-specific Emacs configuration
+;;
+;; Note: This will not handle the spawning of new frames. A better way
+;; to handle this is actually to encapsulate this in a function called
+;; by the after-frame-created-hook.
+(when (display-graphic-p)
+  ;; Theme loaded here due to bugs loading elsewhere...
+  (load-theme 'zenburn t)
+  ;; Note: DejaVu may be more readable. It has much better Unicode support, as well.
+  ;; (set-default-font "DejaVu Sans Mono-10")
+  (set-default-font "Anonymous Pro-12"))
 (load-theme 'zenburn t)
 
 ;; Emacs server

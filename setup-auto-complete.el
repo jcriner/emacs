@@ -8,6 +8,8 @@
 (auto-complete-mode)
 
 ;; Configuration, settings.
+(require 'auto-complete-config)
+(ac-config-default)
 
 (provide 'setup-auto-complete)
 ;;; -- setup-auto-complete.el ends here

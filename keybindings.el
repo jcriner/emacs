@@ -29,7 +29,13 @@
 
 ;; Auto-indent on RET globally by default. (Maybe sane-defaults.el
 ;; should have this)
+;;
+;; This is a pain for things like python mode. Guess I'll need mode
+;; specific things against this...
 (global-set-key (kbd "RET") 'reindent-then-newline-and-indent)
+;; Python gets a more limited (and less annoying) version. 
+(eval-after-load 'python 
+  '(define-key python-mode-map (kbd "RET") 'newline-and-indent))
 
 ;; Expansion binding
 (global-set-key (kbd "C-.") 'dabbrev-expand) ; will make hippie, later
