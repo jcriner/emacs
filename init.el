@@ -96,12 +96,14 @@
                       auctex
                       auto-complete
                       change-inner ; emulate vim's ci and co commands
+                      ;; Deps are auto-pulled by 
                       dash ; dep for dired functionality
                       dired-details
                       erlang
                       expand-region
                       evil ; bring on the Vim stuff
                       haskell-mode
+                      helm
                       ido-ubiquitous
                       iy-go-to-char
                       ; js2-mode ; improved javascript editing
@@ -136,6 +138,12 @@
 
 ;; ido-config
 (require 'setup-ido)
+
+;; TODO: Write a setup config. See if I can remove all traces of ido
+;; and smex. Enable fuzzy matching and other useful plugins.
+;;
+;; helm config
+(require 'helm)
 
 ;; Setup extensions
 (eval-after-load 'dired '(require 'setup-dired))
