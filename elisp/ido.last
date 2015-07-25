@@ -1,0 +1,53 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/jcriner/code/" . "code-retreat/")
+ ("/" . "home/")
+ ("/Users/jcriner/" . "Desktop/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/jcriner/Desktop/"
+ "/Users/jcriner/code/code-retreat/"
+ "/Users/jcriner/.emacs.d/"
+ "/Users/jcriner/"
+ "/etc/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "client.c"
+ "server.c"
+ "trivial_server.c"
+ "game_of_life_test.py"
+ "game_of_life.py"
+ "init.el"
+ "hello.py"
+ "hello_test.py"
+ ".bash_profile"
+ "profile"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/jcriner/Desktop/" (21720 14579 0 0) "trivial_server.c" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/jcriner/" (21720 14666 0 0) "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "code/" "Applications/" "a.out" ".viminfo" ".Trash/" ".sso/" ".ssh/" ".smex-items" ".openvpn-connect.json" ".macports/" ".lesshst" ".ipython/" ".ghc/" ".esets/" ".emacs.keyfreq" ".emacs.d/" ".DS_Store" ".CFUserTextEncoding" ".bash_profile~" ".bash_profile.macports-saved_2015-01-12_at_13:21:03" ".bash_profile" ".bash_history" "#.bash_rc#" "../" "./")
+
+ ("/Users/jcriner/code/code-retreat/" (21606 34703 0 0) "hello_test.py" "hello.pyc" "hello.py" "game_of_life_test.py" "game_of_life.pyc" "game_of_life.py" ".gitignore" ".git/" ".#game_of_life.py" "../" "./")
+
+ ("/Users/jcriner/.emacs.d/" (21605 49124 0 0) "snippets/" "setup-yasnippet.el" "setup-shell.el" "setup-package.el" "setup-lisp.el" "setup-ido.el" "setup-dired.el" "setup-auto-complete.el" "sane-defaults.el" "recentf" "README.md" "paredit.html" "my-misc.el" "my-functions.el" "mode-mappings.el" "mode-keybindings.txt" "machine-specific/" "keybindings.el" "itch.org" "init.el" "ido.last" "elpa/" "delete-mode-example.el" "defuns/" "default-keybindings.txt" "custom.el" "backups/" "auto-save-list/" "ac-comphist.dat" ".smex-items" ".mc-lists.el" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/jcriner/code/" (21605 47992 0 0) "code-retreat/" "../" "./")
+
+ ("/home/" (21576 30941 530000 0) "../" "./")
+
+ ("/etc/" (21576 31190 0 0) "zshenv" "xtab" "ttys" "syslog.conf" "sysctl.conf" "sudoers" "sshd_config" "ssh_config" "snmp/" "shells" "services" "security/" "rtadvd.conf" "rpc" "rmtab" "resolv.conf" "rc.netboot" "rc.imaging" "rc.common" "racoon/" "puppet/" "protocols" "profile" "ppp/" "postfix/" "php.ini.default" "php-fpm.conf.default" "pf.os" "pf.mnpsim.conf" "pf.conf" "pf.anchors/" "periodic/" "paths.d/" "paths" "passwd.local" "passwd.cache" "passwd" "pam.d/" "openldap/" "ntp_opendirectory.conf" "ntp.conf" "ntp-restrict.conf" "nssecurity.ini" "notify.conf" "nfs.conf" "newsyslog.d/" "newsyslog.conf" "networks" "netgroup.prev" "netgroup" "nanorc" "moduli" "master.passwd" "manpaths.d/" "manpaths" "man.conf" "mail.rc" "mach_init_per_user.d/" "mach_init_per_login_session.d/" "mach_init.d/" "logout.hook" "login.hook" "locate.rc" "localtime" "launchd.conf" "krb5.keytab" "krb5.conf" "kern_loader.conf" "irbrc" "ip6addrctl.conf" "hosts.equiv" "hosts" "hostconfig" "hooks/" "group.local" "group.cache" "group" "gettytab" "gagent.local.yaml" "ftpusers" "ftpd.conf.default" "ftpd.conf" "fstab.hd" "find.codes" "facter.conf" "emond.d/" "efax.rc" "duti.conf" "dnsextd.conf" "defaults/" "cups/" "csh.logout" "csh.login" "csh.cshrc" "com.apple.screensharing.agent.launchd" "bashrc" "autofs.conf" "auto_master" "auto.home" "auto.auto" "asl.conf" "asl/" "apache2/" "aliases.db" "aliases" "afpovertcp.cfg" "../" "./")
+
+ ("/Users/" (21547 11179 0 0) "tatwood/" "Shared/" "provision/" "jcriner/" ".localized" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
