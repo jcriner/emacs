@@ -49,8 +49,10 @@
 (setq site-lisp-dir
       (expand-file-name "site-lisp" user-emacs-directory))
 
+(setq user-elisp-dir (concat user-emacs-directory "elisp"))
+
 ;; Set up load path
-(add-to-list 'load-path user-emacs-directory)
+(add-to-list 'load-path user-elisp-dir)
 (add-to-list 'load-path site-lisp-dir)
 
 ;; User specific settings (make machine specific?)
@@ -109,6 +111,8 @@
                       multiple-cursors ; TODO: need to configure more.
                       paredit
                       paredit-menu
+                      professional-theme
+                      smartscan
                       smex
                       smooth-scrolling
                       unbound ; conveniently list unbound keys
@@ -156,25 +160,16 @@
 (require 'my-misc)
 ; Appearance settings are also misc, too.
 
+;; Might want a small config for this at some point, in keeping with
+;; the modal organization of this init file.
+(require 'smartscan)
+
 
 ;; Functions (load all files in defuns-dir)
 (setq defuns-dir (expand-file-name "defuns" user-emacs-directory))
 (dolist (file (directory-files defuns-dir t "\\w+"))
   (when (file-regular-p file)
     (load file)))
-
-
-
-;; Diminish modeline clutter (maybe refactor to setup-* files)
-(require 'diminish)
-;; TODO: Need to debug these.
-;(diminish 'paredit-mode)
-;(diminish 'eldoc-mode)
-
-
-;; Browse kill ring
-(require 'browse-kill-ring)
-(setq browse-kill-ring-quit-action 'save-and-restore)
 
 
 ;; Smart M-x is smart
@@ -205,11 +200,12 @@
 ;; by the after-frame-created-hook.
 (when (display-graphic-p)
   ;; Theme loaded here due to bugs loading elsewhere...
-  (load-theme 'zenburn t)
+  ;;;;;; (load-theme 'zenburn t)
   ;; Note: DejaVu may be more readable. It has much better Unicode support, as well.
   ;; (set-default-font "DejaVu Sans Mono-10")
   (set-default-font "Anonymous Pro-12"))
-(load-theme 'zenburn t)
+; (load-theme 'zenburn t)
+(load-theme 'professional t)
 
 ;; Emacs server
 (require 'server)
