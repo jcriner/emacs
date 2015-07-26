@@ -96,8 +96,7 @@
                       auctex
                       auto-complete
                       change-inner ; emulate vim's ci and co commands
-                      ;; Deps are auto-pulled by 
-                      dash ; dep for dired functionality
+                      dash
                       dired-details
                       erlang
                       expand-region
@@ -114,6 +113,7 @@
                       paredit
                       paredit-menu
                       professional-theme
+                      projectile
                       smartscan
                       smex
                       smooth-scrolling
@@ -144,6 +144,9 @@
 ;;
 ;; helm config
 (require 'helm)
+
+;; TODO: Write a setup config for projectile.
+(require 'projectile)
 
 ;; Setup extensions
 (eval-after-load 'dired '(require 'setup-dired))
