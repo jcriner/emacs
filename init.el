@@ -145,6 +145,12 @@
 (require 'helm)
 
 ;; TODO: Write a setup config for projectile.
+;;
+;; Note: There's some kind of bug in this right now due to its
+;; dependency on dash. I apparently had an obsolete version (why
+;; didn't it upgrade that automatically?). I patched the version, but
+;; still running into issues with projectile's use of anaphoric
+;; macros.
 (require 'projectile)
 
 ;; Setup extensions
