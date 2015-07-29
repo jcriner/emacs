@@ -83,7 +83,16 @@
 ;;; Magnar Sveen's .emacs.d/ does this differently, but I'm not
 ;;; convinced his approach is actually better.
 
+;; Require 'package, initialize it, and ensure ELPA, MELPA, and
+;; Marmalade are available repos.
 (require 'setup-package)
+
+;; TODO: Convert existing files to use `use-package' exclusively.
+;;
+;; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
 ;; List of packages I expect to have anywhere.
 ;;
