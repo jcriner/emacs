@@ -93,6 +93,7 @@
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
+(require 'use-package)
 
 ;; List of packages I expect to have anywhere.
 ;;
@@ -162,14 +163,6 @@
 ;; still running into issues with projectile's use of anaphoric
 ;; macros.
 (require 'projectile)
-
-;; TODO: Rewrite my package-management using this package.
-;;
-;; This should also replace my list of packages to install, as
-;; use-package can do the installation for me. I'll still need to
-;; bootstrap thw installation of this package to make sure it works in
-;; clean environments.
-(require 'use-package)
 
 ;; Setup extensions
 (eval-after-load 'dired '(require 'setup-dired))
