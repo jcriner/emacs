@@ -120,7 +120,6 @@
                       ; js2-mode ; improved javascript editing
                       keyfreq
                       magit ; Git management from Emacs.
-                      multiple-cursors ; TODO: need to configure more.
                       paredit
                       paredit-menu
                       professional-theme
