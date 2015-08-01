@@ -2,23 +2,6 @@
 ;;;;
 ;;;; Also pulled largely from Magnar.
 
-(defmacro create-simple-keybinding-command (name key)
-  `(defmacro ,name (&rest fns)
-     (list 'global-set-key (kbd ,key) `(lambda ()
-                                         (interactive)
-                                         ,@fns))))
-
-(create-simple-keybinding-command f2 "<f2>")
-(create-simple-keybinding-command f5 "<f5>")
-(create-simple-keybinding-command f6 "<f6>")
-(create-simple-keybinding-command f7 "<f7>")
-(create-simple-keybinding-command f8 "<f8>")
-(create-simple-keybinding-command f9 "<f9>")
-(create-simple-keybinding-command f10 "<f10>")
-(create-simple-keybinding-command f11 "<f11>")
-(create-simple-keybinding-command f12 "<f12>")
-
-
 (defun back-to-indentation-or-beginning ()
   "Go to start of indentation, or start of line if pressed again."
   (interactive)

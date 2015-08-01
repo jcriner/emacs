@@ -255,6 +255,11 @@
          ("C-S-<mouse-1>" . mc/add-cursor-on-click)))
 
 
+(use-package change-inner
+  :ensure t
+  :bind (("M-i" . change-inner)
+         ("M-o" . change-outer)))
+
 ;;;--------------------------------------------------
 ;;; Load user specific stuff
 

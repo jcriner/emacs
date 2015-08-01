@@ -77,12 +77,6 @@
 (global-set-key (kbd "M-m") 'iy-go-to-char)
 (global-set-key (kbd "M-M") 'iy-go-to-char-backward)
 
-;; Get Vim's ci and co commands.
-;; Evil could also help with this.
-(require 'change-inner)
-(global-set-key (kbd "M-i") 'change-inner)
-(global-set-key (kbd "M-o") 'change-outer)
-
 ;; ace-jump-mode
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
 
@@ -96,22 +90,11 @@
 ;; Create new frame
 (define-key global-map (kbd "C-x C-n") 'make-frame-command)
 
-;; TODO: Find the definition of this function and re-enable.
-;; Jump to a definition in the current file. (This is awesome)
-;(global-set-key (kbd "C-x C-i") 'ido-imenu)
-
-
 ;; File finding
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
-(global-set-key (kbd "C-x f") 'recentf-ido-find-file)
 (global-set-key (kbd "C-x C-p") 'find-or-create-file-at-point)
 (global-set-key (kbd "C-x M-p") 'find-or-create-file-at-point-other-window)
-;(global-set-key (kbd "C-c y") 'bury-buffer)
-;(global-set-key (kbd "C-c r") 'revert-buffer)
-;(global-set-key (kbd "M-`") 'file-cache-minibuffer-complete)
-;(global-set-key (kbd "C-x C-b") 'ibuffer)
-;; TODO: Figure out what the above do.
 
 ;; Window switching
 (windmove-default-keybindings) ; Shift + direction
@@ -119,30 +102,15 @@
 ;; Navigation bindings
 (global-set-key [remap goto-line] 'goto-line-with-feedback)
 
-(global-set-key (kbd "<home>") 'beginning-of-buffer)
-(global-set-key (kbd "<end>") 'end-of-buffer)
-
-
 ;; Webjump let's you quickly search google, wikipedia, emacs wiki
 (global-set-key (kbd "C-x g") 'webjump)
 (global-set-key (kbd "C-x M-g") 'browse-url-at-point)
 
 
-;; Completion at point (M-tab is harder to press.)
-(global-set-key (kbd "C-<tab>") 'completion-at-point)
-
-
-;; TODO: May not want to use this. Might encourage bad habits.
-;; Move more quickly
-(global-set-key (kbd "C-S-n") (lambda () (interactive) (ignore-errors (next-line 5))))
-(global-set-key (kbd "C-S-p") (lambda () (interactive) (ignore-errors (previous-line 5))))
-(global-set-key (kbd "C-S-f") (lambda () (interactive) (ignore-errors (forward-char 5))))
-(global-set-key (kbd "C-S-b") (lambda () (interactive) (ignore-errors (backward-char 5))))
-
-
 ;; Comment/uncomment block
 (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c u") 'uncomment-region)
+
 
 ;; Eval buffer
 (global-set-key (kbd "C-c v") 'eval-buffer)
@@ -172,44 +140,9 @@
 (define-key occur-mode-map (kbd "n") 'next-line)
 (define-key occur-mode-map (kbd "p") 'previous-line)
 
-;; Find files by name and display results in dired
-(global-set-key (kbd "M-s f") 'find-name-dired)
-
-;; Browse the kill ring
-(global-set-key (kbd "C-x C-y") 'browse-kill-ring)
-
-
 ;; Expand region (by semantic units)
 ; TODO: Is this the right keybinding for this?
 (global-set-key (kbd "M-@") 'er/expand-region)
-                                               
-
-;; TODO: Read cursor documentation, and find keybindings for these bad boys.
-;; Experimental multiple-cursors
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-;; (global-set-key (kbd "C-S-c C-e") 'mc/edit-ends-of-lines)
-;; (global-set-key (kbd "C-S-c C-a") 'mc/edit-beginnings-of-lines)
-
-;; ;; Mark additional regions matching current region
-;; (global-set-key (kbd "M-æ") 'mc/mark-all-like-this-dwim)
-;; (global-set-key (kbd "C-å") 'mc/mark-previous-like-this)
-;; (global-set-key (kbd "C-æ") 'mc/mark-next-like-this)
-;; (global-set-key (kbd "C-Æ") 'mc/mark-more-like-this-extended)
-;; (global-set-key (kbd "M-å") 'mc/mark-all-in-region)
-
-;; ;; Symbol and word specific mark-more
-;; (global-set-key (kbd "s-æ") 'mc/mark-next-word-like-this)
-;; (global-set-key (kbd "s-å") 'mc/mark-previous-word-like-this)
-;; (global-set-key (kbd "M-s-æ") 'mc/mark-all-words-like-this)
-;; (global-set-key (kbd "s-Æ") 'mc/mark-next-symbol-like-this)
-;; (global-set-key (kbd "s-Å") 'mc/mark-previous-symbol-like-this)
-;; (global-set-key (kbd "M-s-Æ") 'mc/mark-all-symbols-like-this)
-;; 
-;; ;; Extra multiple cursors stuff
-;; (global-set-key (kbd "C-~") 'mc/reverse-regions)
-;; (global-set-key (kbd "M-~") 'mc/sort-regions)
-;; (global-set-key (kbd "H-~") 'mc/insert-numbers)
-
 
 ;; Switch C-l to a prefix command.
 (global-unset-key "\C-l")
