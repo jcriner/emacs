@@ -161,9 +161,9 @@
 
 (use-package helm-swoop
   :ensure t
-  ;; TODO: Pick a better keybinding for this, and for
+  ;; TODO: Pick a keybinding for this, and for
   ;; helm-multi-swoop, etc.
-  :bind (("M-s" . helm-swoop)))
+)
 
 ;; TODO: Write a setup config for projectile.
 (require 'projectile)
