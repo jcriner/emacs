@@ -147,12 +147,6 @@
 ;; ido-config
 (require 'setup-ido)
 
-;; TODO: Write a setup config. See if I can remove all traces of ido
-;; and smex. Enable fuzzy matching and other useful plugins.
-;;
-;; helm config
-(require 'helm)
-
 (use-package helm
   :ensure t
   :diminish helm-mode
