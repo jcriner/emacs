@@ -105,11 +105,9 @@
 
 (defvar my-packages '(
                       ace-jump-mode
-                      auctex
                       auto-complete
                       change-inner ; emulate vim's ci and co commands
                       dash
-                      dired-details
                       erlang
                       expand-region
                       evil ; bring on the Vim stuff
@@ -129,7 +127,6 @@
                       smooth-scrolling
                       unbound ; conveniently list unbound keys
                       undo-tree
-                      use-package ; this should take care of all my package installation
                       yasnippet
                       zenburn-theme
                       )
