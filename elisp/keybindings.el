@@ -41,15 +41,6 @@
 ;; Expansion binding
 (global-set-key (kbd "C-.") 'dabbrev-expand) ; will make hippie, later
 
-
-;; Smart M-x
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-;; Per Steve Yegge's advice:
-(global-set-key (kbd "C-x C-m") 'smex)
-
 ;; Improve 'open-line' functionality.
 (global-set-key (kbd "C-o") 'smart-open-line)
 (global-set-key (kbd "C-S-o") 'smart-open-line-above)

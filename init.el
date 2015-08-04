@@ -166,7 +166,6 @@
 )
 
 ;; TODO: Write a setup config for projectile.
-(require 'dash)
 (use-package projectile
   :ensure t
   :defer t
@@ -206,12 +205,6 @@
 (dolist (file (directory-files defuns-dir t "\\w+"))
   (when (file-regular-p file)
     (load file)))
-
-
-;; Smart M-x is smart
-(require 'smex)
-(smex-initialize)
-
 
 ;; iy-go-to-char
 (require 'iy-go-to-char)
