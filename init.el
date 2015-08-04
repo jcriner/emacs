@@ -166,7 +166,12 @@
 )
 
 ;; TODO: Write a setup config for projectile.
-(require 'projectile)
+(require 'dash)
+(use-package projectile
+  :ensure t
+  :defer t
+  :diminish projectile-mode
+)
 
 ;; Setup extensions
 (eval-after-load 'dired '(require 'setup-dired))
@@ -234,7 +239,7 @@
   ;;;;;; (load-theme 'zenburn t)
   ;; Note: DejaVu may be more readable. It has much better Unicode support, as well.
   ;; (set-default-font "DejaVu Sans Mono-10")
-  (set-default-font "Anonymous Pro-12"))
+  (set-default-font "Anonymous Pro-11"))
 ; (load-theme 'zenburn t)
 (load-theme 'professional t)
 
