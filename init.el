@@ -144,8 +144,18 @@
 ;; company config
 (use-package company
   :ensure t
-  )
+  :config
+  (progn
+    (global-company-mode t)))
 
+(use-package company-quickhelp
+  :ensure t
+  :config
+  (progn
+    (company-quickhelp-mode t)))
+
+(use-packag)
+(company-quickhelp-mode 1)
 ;; ido-config
 (require 'setup-ido)
 
