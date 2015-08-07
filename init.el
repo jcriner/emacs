@@ -105,7 +105,6 @@
 
 (defvar my-packages '(
                       ace-jump-mode
-                      auto-complete
                       change-inner ; emulate vim's ci and co commands
                       dash
                       diminish
@@ -144,6 +143,11 @@
 ;; Paren-matching, active region, etc.
 (require 'sane-defaults)
 
+;; company config
+(use-package company
+  :ensure t
+  )
+
 ;; ido-config
 (require 'setup-ido)
 
@@ -180,9 +184,6 @@
 
 ;; YASnippet configuration.
 (require 'setup-yasnippet)
-
-;; Auto-complete. (Only enables for elisp-mode, right now).
-(require 'setup-auto-complete)
 
 ;; Map files to modes
 (require 'mode-mappings)
