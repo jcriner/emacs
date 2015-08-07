@@ -158,7 +158,7 @@
   :ensure t
   :config
   (progn
-    (add-to-list 'company-backends 'company-ycm)))
+    (add-to-list 'company-backends 'company-ycmd)))
 
 ;; ido-config
 (require 'setup-ido)
