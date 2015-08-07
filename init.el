@@ -160,9 +160,6 @@
   (progn
     (add-to-list 'company-backends 'company-ycmd)))
 
-;; ido-config
-(require 'setup-ido)
-
 (use-package helm
   :ensure t
   :diminish helm-mode
@@ -187,6 +184,38 @@
   :defer t
   :diminish projectile-mode
 )
+
+
+;; ido-config
+(use-package ido
+  :ensure ido-ubiquitous
+  :init
+  (progn
+    (require 'ido)
+    (ido-mode t)
+    (setq ido-enable-prefix nil
+          ido-enable-flex-matching t
+          ido-auto-merge-work-directories-length nil
+          ido-create-new-buffer 'always
+          ido-use-filename-at-point 'guess
+          ido-use-virtual-buffers t
+          ido-handle-duplicate-virtual-buffers 2
+          ido-max-prospects 10)
+    (require 'ido-ubiquitous)
+    (ido-ubiquitous-mode t))
+  :config
+  (progn
+    (add-hook 'ido-setup-hook
+              (lambda ()
+                (define-key ido-file-completion-map
+                  (kbd "~")
+                  (lambda ()
+                    (interactive)
+                    (cond
+                     ((looking-back "/") (insert "~/"))
+                     (:else (call-interactively 'self-insert-command)))))))
+    (require 'ido-ubiquitous)
+    (ido-ubiquitous-mode t)))
 
 ;; Setup extensions
 (eval-after-load 'dired '(require 'setup-dired))
