@@ -226,9 +226,6 @@
 ;; YASnippet configuration.
 (require 'setup-yasnippet)
 
-;; Map files to modes
-(require 'mode-mappings)
-
 ;; List unbound key sequences.
 (require 'unbound)
 
