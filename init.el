@@ -111,6 +111,7 @@
                       erlang
                       expand-region
                       evil ; bring on the Vim stuff
+                      free-keys
                       haskell-mode
                       ido-ubiquitous
                       iy-go-to-char
@@ -227,6 +228,7 @@
 (require 'setup-yasnippet)
 
 ;; List unbound key sequences.
+(require 'free-keys)
 (require 'unbound)
 
 ;; Misc
