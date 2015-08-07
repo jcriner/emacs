@@ -121,8 +121,6 @@
                       paredit-menu
                       professional-theme
                       projectile
-                      smartscan
-                      smex
                       smooth-scrolling
                       unbound ; conveniently list unbound keys
                       undo-tree
