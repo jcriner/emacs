@@ -167,10 +167,14 @@
   :init
   (progn
     (require 'helm-config)
-    (setq helm-buffers-fuzzy-matching t)
+    (setq helm-M-x-fuzzy-match t
+          helm-buffers-fuzzy-matching t)
     (helm-mode))
   :bind (("M-x" . helm-M-x)
-         ("M-y" . helm-show-kill-ring)))
+         ("M-y" . helm-show-kill-ring))
+  :bind (:map helm-map
+              ("<tab>" . helm-execute-persistent-action)
+              ("C-z"   . helm-select-action)))
 ;; TODO: Switch out of ido-mode and similar completely.
 
 (use-package helm-swoop
