@@ -154,8 +154,12 @@
   (progn
     (company-quickhelp-mode t)))
 
-(use-packag)
-(company-quickhelp-mode 1)
+(use-package company-ycmd
+  :ensure t
+  :config
+  (progn
+    (add-to-list 'company-backends 'company-ycm)))
+
 ;; ido-config
 (require 'setup-ido)
 
@@ -203,11 +207,6 @@
 (require 'misc) ; This is where 'zap-up-to-char comes from.
 (require 'my-misc)
 ; Appearance settings are also misc, too.
-
-;; Might want a small config for this at some point, in keeping with
-;; the modal organization of this init file.
-(require 'smartscan)
-
 
 ;; Functions (load all files in defuns-dir)
 (setq defuns-dir (expand-file-name "defuns" user-emacs-directory))
