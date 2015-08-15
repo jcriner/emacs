@@ -107,7 +107,6 @@
                       free-keys
                       haskell-mode
                       ido-ubiquitous
-                      iy-go-to-char
                       keyfreq
                       magit ; Git management from Emacs.
                       paredit
@@ -254,9 +253,6 @@
 (dolist (file (directory-files defuns-dir t "\\w+"))
   (when (file-regular-p file)
     (load file)))
-
-;; iy-go-to-char
-(require 'iy-go-to-char)
 
 ;; Setup key bindings
 (require 'keybindings)
