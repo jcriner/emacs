@@ -1,4 +1,4 @@
-;;;; keybindings.el
+q;;;; keybindings.el
 ;;;; 
 ;;;; Where all major keybindings get set.
 
@@ -45,10 +45,6 @@
 (global-set-key (kbd "C-o") 'smart-open-line)
 (global-set-key (kbd "C-S-o") 'smart-open-line-above)
 
-;; Make the shell more convenient.
-(global-set-key (kbd "C-z") 'shell)
-
-
 ;; Transpose stuff with M-t
 (global-unset-key (kbd "M-t")) ;; which used to be transpose-words
 (global-set-key (kbd "M-t l") 'transpose-lines)
@@ -60,14 +56,6 @@
 (global-set-key (kbd "M-z") 'zap-up-to-char)
 (global-set-key (kbd "M-Z") 'zap-to-char)
 
-
-;;;--------------------------------------------------
-;;; Some Vim-based stuff.
-
-;; iy-go-to-char - like f in Vim
-(global-set-key (kbd "M-m") 'iy-go-to-char)
-(global-set-key (kbd "M-M") 'iy-go-to-char-backward)
-
 ;; ace-jump-mode
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
 
@@ -77,9 +65,6 @@
 
 ;; Window commands:
 (global-set-key (kbd "C-x 3") 'split-window-right-and-move-there-dammit)
-
-;; Create new frame
-(define-key global-map (kbd "C-x C-n") 'make-frame-command)
 
 ;; File finding
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)
@@ -97,11 +82,9 @@
 (global-set-key (kbd "C-x g") 'webjump)
 (global-set-key (kbd "C-x M-g") 'browse-url-at-point)
 
-
 ;; Comment/uncomment block
 (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c u") 'uncomment-region)
-
 
 ;; Eval buffer
 (global-set-key (kbd "C-c v") 'eval-buffer)
@@ -145,7 +128,6 @@
 ;; Standard remapping.
 
 (global-set-key (kbd "C-l C-l") 'recenter)
-;; TODO: These will be altered to be the commands I actually want.
 (define-key ctl-l-map "r"  'replace-string)
 (define-key ctl-l-map "R"  'replace-regexp)
 (define-key ctl-l-map "q"  'query-replace)
