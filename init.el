@@ -117,7 +117,6 @@
                       smooth-scrolling
                       unbound ; conveniently list unbound keys
                       undo-tree
-                      yasnippet
                       zenburn-theme
                       )
   "A list of packages to ensure are installed at launch.")
@@ -224,8 +223,22 @@
 ;; Language-specific setup files
 (require 'setup-lisp)
 
-;; YASnippet configuration.
-(require 'setup-yasnippet)
+;; Setup Yasnippet.
+(use-package yasnippet
+  :ensure t
+  :init
+  (progn
+    (setq yas/snippet-dirs '("~/.emacs.d/snippets")
+          yas/wrap-around-region t
+          yas/expand-only-for-last-commands '(self-insert-command
+                                              yas-exit-all-snippets
+                                              yas-abort-snippet
+                                              yas-skip-and-clear-or-delete-char
+                                              yas-exit-field-or-maybe-expand)))
+  :config
+  (progn
+    (yas/global-mode t)
+    (define-key yas/keymap (kbd "<return>") 'yas-exit-all-snippets)))
 
 ;; List unbound key sequences.
 (require 'free-keys)
