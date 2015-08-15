@@ -102,14 +102,12 @@
                       change-inner ; emulate vim's ci and co commands
                       dash
                       diminish
-                      erlang
                       expand-region
                       evil ; bring on the Vim stuff
                       free-keys
                       haskell-mode
                       ido-ubiquitous
                       iy-go-to-char
-                      ; js2-mode ; improved javascript editing
                       keyfreq
                       magit ; Git management from Emacs.
                       paredit
