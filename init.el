@@ -245,7 +245,6 @@
 
 ;; Misc
 (require 'misc) ; This is where 'zap-up-to-char comes from.
-(require 'my-misc)
 ; Appearance settings are also misc, too.
 
 ;; Functions (load all files in defuns-dir)
