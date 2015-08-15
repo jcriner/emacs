@@ -71,21 +71,15 @@
 ;; Make backups of files, even when they're in version control
 (setq vc-make-backup-files t)
 
-
-;; ;; Save point position between sessions
-;; (require 'saveplace)
-;; (setq-default save-place t)
-;; (setq save-place-file (expand-file-name ".places" user-emacs-directory))
-
 ;;;--------------------------------------------
 ;;; Package management.
-;;;
-;;; Magnar Sveen's .emacs.d/ does this differently, but I'm not
-;;; convinced his approach is actually better.
 
-;; Require 'package, initialize it, and ensure ELPA, MELPA, and
-;; Marmalade are available repos.
-(require 'setup-package)
+;; We only include the MELPA archive.
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/"))
+(package-initialize)
 
 ;; TODO: Convert existing files to use `use-package' exclusively.
 ;;
@@ -187,7 +181,7 @@
   ;; helm-multi-swoop, etc.
 )
 
-;; TODO: Write a setup config for projectile.
+;; Todo: Write a setup config for projectile.
 (use-package projectile
   :ensure t
   :defer t
