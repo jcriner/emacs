@@ -13,9 +13,7 @@ Examples!
 
 General To-Dos:
 1. Learn more of Evil mode. See if it fits in my workflow.
-2. Rebind "C-l" to be a prefix key. Good times for all.
-3. Read and WRITE more elisp. Need this stuff.
-4. Learn a bit of the 'dash library. May replace 'cl.
+2. Read and WRITE more elisp. Need this stuff.
 
 Text mode:
 1. Auto-fill mode should be default.
@@ -35,9 +33,10 @@ Writing modes:
 
 
 CPU Usage:
-0. I accidentally ran a macro "until bell ring" that would never terminate.
-   This caused the system to seize up; Emacs never relinquished control.
-   There should be a way to prevent this from happening in the future
+0. I accidentally ran a macro "until bell ring" that would never
+   terminate. This caused the system to seize up; Emacs never
+   relinquished control. There should be a way to prevent this from
+   happening in the future, or abort it once it is happening.
 
 Paredit: Others things should be more like it.
 0. Specifically, just like 'kill' and such works on the tree structure
@@ -56,12 +55,6 @@ Macro undo:
 0. Command 'undo' does not undo the entire application of a keyboard
    macro, and I think it should. Fix that, and then press that
    upstream, if somebody hasn't already done it.
-
-Auto-complete:
-0. Modify the popup window so that I can hit some key-sequence while
-   the popup is active which produces, say, numerics next to the
-   completions. Then you just type the number next to a completion,
-   and it completes.
 
 Simple diff:
 0. May already exist: Want to be able to just hit M-x file-diff or

@@ -137,7 +137,9 @@
   :ensure t
   :config
   (progn
-    (global-company-mode t)))
+    (global-company-mode t)
+    ;; TODO: Better way to integrate this for Python completion?
+    (add-hook 'python-mode 'run-python)))
 
 (use-package company-quickhelp
   :ensure t
@@ -183,7 +185,6 @@
   :defer t
   :diminish projectile-mode
 )
-
 
 ;; ido-config
 (use-package ido
