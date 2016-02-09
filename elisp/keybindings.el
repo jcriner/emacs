@@ -1,4 +1,4 @@
-q;;;; keybindings.el
+;;;; keybindings.el
 ;;;; 
 ;;;; Where all major keybindings get set.
 
