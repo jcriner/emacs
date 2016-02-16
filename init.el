@@ -336,3 +336,7 @@
 (global-set-key (kbd "C-x $") 'toggle-selective-display-at-point)
 (put 'dired-find-alternate-file 'disabled nil)
 (put 'upcase-region 'disabled nil)
+
+;; Turn off atrocious scroll acceleration and such.
+(setq mouse-wheel-scroll-amount '(3))
+(setq mouse-wheel-progressive-speed nil)
