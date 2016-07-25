@@ -1,3 +1,4 @@
+
 ;;;; .emacs.d/init.el, Jacob Criner
 ;;;; 
 ;;;; Selections of this file were taken from Magnar Sveen's .emacs.d/

@@ -11,7 +11,9 @@
         c-electric-semi&comma
         c-electric-slash
         c-electric-star
+        company-quickhelp-manual-begin
         dabbrev-expand
+        electric-newline-and-maybe-indent
         end-of-buffer
         eval-and-replace
         indent-for-tab-command
@@ -28,6 +30,12 @@
 
 (setq mc/cmds-to-run-once
       '(
+        electric-pair-delete-pair
+        helm-M-x
         ido-find-file
+        markdown-exdent-or-delete
+        mouse-set-region
+        previous-buffer
+        reindent-then-newline-and-indent
         smex
         ))
