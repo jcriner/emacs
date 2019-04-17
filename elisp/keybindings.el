@@ -114,10 +114,6 @@
 (define-key occur-mode-map (kbd "n") 'next-line)
 (define-key occur-mode-map (kbd "p") 'previous-line)
 
-;; Expand region (by semantic units)
-; TODO: Is this the right keybinding for this?
-(global-set-key (kbd "M-@") 'er/expand-region)
-
 ;; Switch C-l to a prefix command.
 (global-unset-key "\C-l")
 (defvar ctl-l-map (make-keymap)

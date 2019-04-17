@@ -111,30 +111,6 @@
 ;;;----------------------------------------
 ;;; Requires, Loads, etc.
 
-;; Paren-matching, active region, etc.
-(require 'sane-defaults)
-
-;; company config
-(use-package company
-  :ensure t
-  :config
-  (progn
-    (global-company-mode t)
-    ;; TODO: Better way to integrate this for Python completion?
-    (add-hook 'python-mode 'run-python)))
-
-(use-package company-quickhelp
-  :ensure t
-  :config
-  (progn
-    (company-quickhelp-mode t)))
-
-(use-package company-ycmd
-  :ensure t
-  :config
-  (progn
-    (add-to-list 'company-backends 'company-ycmd)))
-
 (use-package helm
   :ensure t
   :diminish helm-mode
@@ -159,13 +135,6 @@
   :ensure t
   ;; TODO: Pick a keybinding for this, and for
   ;; helm-multi-swoop, etc.
-)
-
-;; Todo: Write a setup config for projectile.
-(use-package projectile
-  :ensure t
-  :defer t
-  :diminish projectile-mode
 )
 
 ;; ido-config
@@ -199,12 +168,6 @@
     (require 'ido-ubiquitous)
     (ido-ubiquitous-mode t)))
 
-;; Setup extensions
-(eval-after-load 'dired '(require 'setup-dired))
-
-;; Language-specific setup files
-(require 'setup-lisp)
-
 ;; Setup Yasnippet.
 (use-package yasnippet
   :ensure t
@@ -223,18 +186,17 @@
     (yas/global-mode t)
     (define-key yas/keymap (kbd "<return>") 'yas-exit-all-snippets)))
 
-;; Misc
-(require 'misc) ; This is where 'zap-up-to-char comes from.
-; Appearance settings are also misc, too.
-
 ;; Functions (load all files in defuns-dir)
 (setq defuns-dir (expand-file-name "defuns" user-emacs-directory))
 (dolist (file (directory-files defuns-dir t "\\w+"))
   (when (file-regular-p file)
     (load file)))
 
-;; Setup key bindings
-(require 'keybindings)
+;; Requires for my personal files
+(require 'keybindings) ; Setup key bindings
+(require 'sane-defaults) ; Paren-matching, active region, etc.
+;; Misc
+; (require 'misc) ; This is where 'zap-up-to-char comes from.
 
 ;; GUI-specific Emacs configuration
 ;;
