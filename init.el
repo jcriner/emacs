@@ -60,6 +60,11 @@
 ;; Make backups of files, even when they're in version control
 (setq vc-make-backup-files t)
 
+;; Emacs server
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
 ;;;--------------------------------------------
 ;;; Package management.
 
@@ -88,25 +93,12 @@
 ;;
 ;; TODO: Cleanout most of these packages. I use very few of them.
 (defvar my-packages '(
-                      ace-jump-mode
-                      change-inner ; emulate vim's ci and co commands
-                      dash
                       diminish
-                      expand-region
                       evil ; bring on the Vim stuff
-                      free-keys
-                      haskell-mode
                       ido-ubiquitous
-                      keyfreq
-                      magit ; Git management from Emacs.
-                      paredit
-                      paredit-menu
                       professional-theme
-                      projectile
                       smooth-scrolling
-                      unbound ; conveniently list unbound keys
                       undo-tree
-                      zenburn-theme
                       )
   "A list of packages to ensure are installed at launch.")
 
@@ -231,10 +223,6 @@
     (yas/global-mode t)
     (define-key yas/keymap (kbd "<return>") 'yas-exit-all-snippets)))
 
-;; List unbound key sequences.
-(require 'free-keys)
-(require 'unbound)
-
 ;; Misc
 (require 'misc) ; This is where 'zap-up-to-char comes from.
 ; Appearance settings are also misc, too.
@@ -248,16 +236,6 @@
 ;; Setup key bindings
 (require 'keybindings)
 
-;; Keep track of my command usage.
-;; This information is intended to be used to:
-;; * Determine efficient keybindings
-;; * Find inefficiencies in my editing
-;; * Investigate further movement towards Evil.
-(require 'keyfreq)
-(keyfreq-mode 1)
-(keyfreq-autosave-mode 1)
-
-
 ;; GUI-specific Emacs configuration
 ;;
 ;; Note: This will not handle the spawning of new frames. A better way
@@ -265,18 +243,10 @@
 ;; by the after-frame-created-hook.
 (when (display-graphic-p)
   ;; Theme loaded here due to bugs loading elsewhere...
-  ;;;;;; (load-theme 'zenburn t)
   ;; Note: DejaVu may be more readable. It has much better Unicode support, as well.
   ;; (set-default-font "DejaVu Sans Mono-10")
   (set-default-font "Anonymous Pro-11"))
-; (load-theme 'zenburn t)
 (load-theme 'professional t)
-
-;; Emacs server
-(require 'server)
-(unless (server-running-p)
-  (server-start))
-
 
 (use-package multiple-cursors
   :ensure t
@@ -291,42 +261,18 @@
          ("C-*"           . mc/mark-all-like-this)
          ("C-S-<mouse-1>" . mc/add-cursor-on-click)))
 
-
-(use-package change-inner
-  :ensure t
-  :bind (("M-i" . change-inner)
-         ("M-o" . change-outer)))
-
 ;;;--------------------------------------------------
 ;;; Load user specific stuff
 
-;; Conclude init by setting up specifics for the current user
+;; Conclude init by setting up specifics for the current machine
 (when (file-exists-p machine-settings-dir)
   (mapc 'load (directory-files machine-settings-dir nil "^[^#].*el$"))) 
                                         ; Note that this ignores .elc
                                         ; files. May want to revise
                                         ; this regexp slightly.
 
-;; TODO: enabled all disabled commands.
-(put 'narrow-to-region 'disabled nil)
-(put 'downcase-region 'disabled nil)
-
-
 ;;;--------------------------------------------------
-;;; Temporary dumping ground.
-
-;; Toggle selective-display based on where the cursor is.
-(defun toggle-selective-display-at-point ()
-  (interactive)
-  (set-selective-display
-   (if selective-display
-       nil
-     (+ 1 (current-column)))))
-
-;; Override the original 'selective-display' keybinding.
-(global-set-key (kbd "C-x $") 'toggle-selective-display-at-point)
-(put 'dired-find-alternate-file 'disabled nil)
-(put 'upcase-region 'disabled nil)
+;;; Miscellaneous
 
 ;; Turn off atrocious scroll acceleration and such.
 (setq mouse-wheel-scroll-amount '(3))

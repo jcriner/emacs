@@ -4,6 +4,7 @@
 (setq mc/cmds-to-run-for-all
       '(
         back-to-indentation-or-beginning
+        c-electric-brace
         c-electric-colon
         c-electric-delete-forward
         c-electric-lt-gt
@@ -16,6 +17,7 @@
         electric-newline-and-maybe-indent
         end-of-buffer
         eval-and-replace
+        evil-insert
         indent-for-tab-command
         kill-region
         paredit-forward-delete
@@ -30,9 +32,12 @@
 
 (setq mc/cmds-to-run-once
       '(
+        beginning-of-buffer
         electric-pair-delete-pair
+        evil-delete-backward-char-and-join
         helm-M-x
         ido-find-file
+        ido-switch-buffer
         markdown-exdent-or-delete
         mouse-set-region
         previous-buffer
