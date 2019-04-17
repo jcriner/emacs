@@ -1,8 +1,5 @@
-
 ;;;; .emacs.d/init.el, Jacob Criner
 ;;;; 
-;;;; Selections of this file were taken from Magnar Sveen's .emacs.d/
-;;;;
 ;;;; For standard elisp dev, C-M-x for eval-defun. C-u in front to enable edebug.
 
 ;;;--------------------------------------------------
@@ -28,6 +25,8 @@
 ;;;
 ;;;--------------------------------------------------
 
+;;;----------------------------------------
+;;; Preliminaries
 
 ;; Turn off mouse interface early on in startup to avoid momentary display
 ;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1)) 
@@ -37,26 +36,15 @@
 ;; Disable splash screen at start-up.
 (setq inhibit-splash-screen t)
 
-;; Appearance: (Set early on to avoid 'flicker' of changing colors, etc)
-
-;; For some reason, this 'load-theme doesn't work here, and is placed
-;; later on in the file.
-;;
-;; (load-theme 'zenburn t)
-
-;;----------------------------------------
-
 ;; Set path to dependencies
-(setq site-lisp-dir
-      (expand-file-name "site-lisp" user-emacs-directory))
-
+(setq site-lisp-dir (expand-file-name "site-lisp" user-emacs-directory))
 (setq user-elisp-dir (concat user-emacs-directory "elisp"))
 
 ;; Set up load path
 (add-to-list 'load-path user-elisp-dir)
 (add-to-list 'load-path site-lisp-dir)
 
-;; User specific settings (make machine specific?)
+;; Machine-specific settings
 (setq machine-settings-dir
       (concat user-emacs-directory "machine-specific/"))
 (add-to-list 'load-path machine-settings-dir)
@@ -75,7 +63,7 @@
 ;;;--------------------------------------------
 ;;; Package management.
 
-;; We only include the MELPA archive.
+;; Only include the MELPA archive.
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives
@@ -97,7 +85,8 @@
 ;; Note: use of 'defvar' means that updating this list and then
 ;; eval-ing the buffer won't actually update the my-packages var. May
 ;; want to adopt a different idiom for this.
-
+;;
+;; TODO: Cleanout most of these packages. I use very few of them.
 (defvar my-packages '(
                       ace-jump-mode
                       change-inner ; emulate vim's ci and co commands
@@ -230,6 +219,7 @@
   :init
   (progn
     (setq yas/snippet-dirs '("~/.emacs.d/snippets")
+          yas-installed-snippets-dir ""
           yas/wrap-around-region t
           yas/expand-only-for-last-commands '(self-insert-command
                                               yas-exit-all-snippets
@@ -341,3 +331,6 @@
 ;; Turn off atrocious scroll acceleration and such.
 (setq mouse-wheel-scroll-amount '(3))
 (setq mouse-wheel-progressive-speed nil)
+
+;; Set fill-column to 80, as God intended. (Previous default: 70)
+(setq-default fill-column 80)
