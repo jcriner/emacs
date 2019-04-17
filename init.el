@@ -111,6 +111,27 @@
 ;;;----------------------------------------
 ;;; Requires, Loads, etc.
 
+;; company config
+(use-package company
+  :ensure t
+  :config
+  (progn
+    (global-company-mode t)
+    ;; TODO: Better way to integrate this for Python completion?
+    (add-hook 'python-mode 'run-python)))
+
+(use-package company-quickhelp
+  :ensure t
+  :config
+  (progn
+    (company-quickhelp-mode t)))
+
+(use-package company-ycmd
+  :ensure t
+  :config
+  (progn
+    (add-to-list 'company-backends 'company-ycmd)))
+
 (use-package helm
   :ensure t
   :diminish helm-mode
