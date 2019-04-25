@@ -139,7 +139,9 @@
   (progn
     (require 'helm-config)
     (setq helm-M-x-fuzzy-match t
-          helm-buffers-fuzzy-matching t)
+          helm-buffers-fuzzy-matching t
+          ;; open helm buffer inside current window, not occupy whole other window
+          helm-split-window-in-side-p  t)
     (helm-mode))
   :bind (("M-x" . helm-M-x)
          ("M-y" . helm-show-kill-ring))
